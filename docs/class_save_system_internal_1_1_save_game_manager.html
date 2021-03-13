@@ -96,16 +96,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a384a9c67f9039a1adb03ab303fa7e8f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new empty save file using the gameID. If a file already exists there this has no effect. This will not open the game  <a href="class_save_system_internal_1_1_save_game_manager.html#a384a9c67f9039a1adb03ab303fa7e8f4">More...</a><br /></td></tr>
 <tr class="separator:a384a9c67f9039a1adb03ab303fa7e8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ce333a5ec9f186a5f1855bff33048f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a3ce333a5ec9f186a5f1855bff33048f7">OpenSave</a> (<a class="el" href="class_game_meta_data.html">GameMetaData</a> game)</td></tr>
-<tr class="memdesc:a3ce333a5ec9f186a5f1855bff33048f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load in the contents of the save file to <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a732c9c106c11becb803129cb11869229">OpenGameData</a>. The paramater <em>game</em>  must be gained from <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#adda7145d08895feb190344049908cb00" title="Get the list of saved games that are in the registry file">SaveRegistryManager.GetAllStoredGames</a>. (open does not imply any kind of resource lock)  <a href="class_save_system_internal_1_1_save_game_manager.html#a3ce333a5ec9f186a5f1855bff33048f7">More...</a><br /></td></tr>
+<tr class="memdesc:a3ce333a5ec9f186a5f1855bff33048f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load in the contents of the save file to OpenGameData. The paramater <em>game</em>  must be gained from <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#adda7145d08895feb190344049908cb00" title="Get the list of saved games that are in the registry file">SaveRegistryManager.GetAllStoredGames</a>. (open does not imply any kind of resource lock)  <a href="class_save_system_internal_1_1_save_game_manager.html#a3ce333a5ec9f186a5f1855bff33048f7">More...</a><br /></td></tr>
 <tr class="separator:a3ce333a5ec9f186a5f1855bff33048f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b4561ea15e6cc031cc2acec3314beb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a0b4561ea15e6cc031cc2acec3314beb7">StageSaveData</a> (<a class="el" href="class_save_data.html">SaveData</a> data)</td></tr>
-<tr class="memdesc:a0b4561ea15e6cc031cc2acec3314beb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the primary function in saving data. This will set the <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a732c9c106c11becb803129cb11869229">OpenGameData</a> to the value of <em>data</em>  (if <em>data</em>  is not <code>null</code>). <em>Warrning</em> This will not actually save the game data. You must call <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#ae3f391567867631d66709f3588169d66" title="Overwrites the open save file with the value of OpenGameData">OverwriteSaveFile</a>  <a href="class_save_system_internal_1_1_save_game_manager.html#a0b4561ea15e6cc031cc2acec3314beb7">More...</a><br /></td></tr>
+<tr class="memdesc:a0b4561ea15e6cc031cc2acec3314beb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the primary function in saving data. This will set the OpenGameData to the value of <em>data</em>  (if <em>data</em>  is not <code>null</code>). <em>Warrning</em> This will not actually save the game data. You must call <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#ae3f391567867631d66709f3588169d66" title="Overwrites the open save file with the value of OpenGameData">OverwriteSaveFile</a>  <a href="class_save_system_internal_1_1_save_game_manager.html#a0b4561ea15e6cc031cc2acec3314beb7">More...</a><br /></td></tr>
 <tr class="separator:a0b4561ea15e6cc031cc2acec3314beb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54f5d08594696a9996fe6da29efac4f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a54f5d08594696a9996fe6da29efac4f1">OverwriteSaveFileAndCloseGame</a> ()</td></tr>
-<tr class="memdesc:a54f5d08594696a9996fe6da29efac4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites the open save file with the value of <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a732c9c106c11becb803129cb11869229">OpenGameData</a> and then nullifies the referance to this file  <a href="class_save_system_internal_1_1_save_game_manager.html#a54f5d08594696a9996fe6da29efac4f1">More...</a><br /></td></tr>
+<tr class="memdesc:a54f5d08594696a9996fe6da29efac4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites the open save file with the value of OpenGameData and then nullifies the referance to this file  <a href="class_save_system_internal_1_1_save_game_manager.html#a54f5d08594696a9996fe6da29efac4f1">More...</a><br /></td></tr>
 <tr class="separator:a54f5d08594696a9996fe6da29efac4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f391567867631d66709f3588169d66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_manager.html#ae3f391567867631d66709f3588169d66">OverwriteSaveFile</a> ()</td></tr>
-<tr class="memdesc:ae3f391567867631d66709f3588169d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites the open save file with the value of <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a732c9c106c11becb803129cb11869229">OpenGameData</a>  <a href="class_save_system_internal_1_1_save_game_manager.html#ae3f391567867631d66709f3588169d66">More...</a><br /></td></tr>
+<tr class="memdesc:ae3f391567867631d66709f3588169d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites the open save file with the value of OpenGameData  <a href="class_save_system_internal_1_1_save_game_manager.html#ae3f391567867631d66709f3588169d66">More...</a><br /></td></tr>
 <tr class="separator:ae3f391567867631d66709f3588169d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add10599b235fcb88c40fb4180c7e9612"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_manager.html#add10599b235fcb88c40fb4180c7e9612">CloseGame</a> ()</td></tr>
 <tr class="memdesc:add10599b235fcb88c40fb4180c7e9612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nullifies the referance to the open file (open does not imply a resources lock)  <a href="class_save_system_internal_1_1_save_game_manager.html#add10599b235fcb88c40fb4180c7e9612">More...</a><br /></td></tr>
@@ -116,14 +116,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ae37b30856b7d66219b52562f3f57fce9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_meta_data.html">GameMetaData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_manager.html#ae37b30856b7d66219b52562f3f57fce9">OpenGameMetaData</a> = null<code> [get]</code></td></tr>
+<tr class="memitem:ae37b30856b7d66219b52562f3f57fce9"><td class="memItemLeft" align="right" valign="top"><a id="ae37b30856b7d66219b52562f3f57fce9"></a>
+<a class="el" href="class_game_meta_data.html">GameMetaData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OpenGameMetaData</b> = null<code> [get]</code></td></tr>
 <tr class="separator:ae37b30856b7d66219b52562f3f57fce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a732c9c106c11becb803129cb11869229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_save_data.html">SaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a732c9c106c11becb803129cb11869229">OpenGameData</a> = null<code> [get]</code></td></tr>
+<tr class="memitem:a732c9c106c11becb803129cb11869229"><td class="memItemLeft" align="right" valign="top"><a id="a732c9c106c11becb803129cb11869229"></a>
+<a class="el" href="class_save_data.html">SaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OpenGameData</b> = null<code> [get]</code></td></tr>
 <tr class="separator:a732c9c106c11becb803129cb11869229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c4e709ab76f690300efc30862e1bb9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a6c4e709ab76f690300efc30862e1bb9d">GameOpen</a><code> [get]</code></td></tr>
+<tr class="memitem:a6c4e709ab76f690300efc30862e1bb9d"><td class="memItemLeft" align="right" valign="top"><a id="a6c4e709ab76f690300efc30862e1bb9d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GameOpen</b><code> [get]</code></td></tr>
 <tr class="separator:a6c4e709ab76f690300efc30862e1bb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00009">9</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="add10599b235fcb88c40fb4180c7e9612"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add10599b235fcb88c40fb4180c7e9612">&#9670;&nbsp;</a></span>CloseGame()</h2>
 
@@ -140,6 +146,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Nullifies the referance to the open file (open does not imply a resources lock) </p>
+
+<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00081">81</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -187,6 +195,8 @@ Properties</h2></td></tr>
 
 <p>Delete a provided game if it exists. If the game provided is currenly open then it is closed. Will not fail. </p>
 
+<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00090">90</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
+
 </div>
 </div>
 <a id="a3ce333a5ec9f186a5f1855bff33048f7"></a>
@@ -205,7 +215,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load in the contents of the save file to <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a732c9c106c11becb803129cb11869229">OpenGameData</a>. The paramater <em>game</em>  must be gained from <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#adda7145d08895feb190344049908cb00" title="Get the list of saved games that are in the registry file">SaveRegistryManager.GetAllStoredGames</a>. (open does not imply any kind of resource lock) </p>
+<p>Load in the contents of the save file to OpenGameData. The paramater <em>game</em>  must be gained from <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#adda7145d08895feb190344049908cb00" title="Get the list of saved games that are in the registry file">SaveRegistryManager.GetAllStoredGames</a>. (open does not imply any kind of resource lock) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">game</td><td>Data class on a save file, gained from <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#adda7145d08895feb190344049908cb00" title="Get the list of saved games that are in the registry file">SaveRegistryManager.GetAllStoredGames</a></td></tr>
@@ -213,6 +223,8 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00028">28</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -231,7 +243,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Overwrites the open save file with the value of <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a732c9c106c11becb803129cb11869229">OpenGameData</a> </p>
+<p>Overwrites the open save file with the value of OpenGameData </p>
+
+<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00070">70</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -250,7 +264,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Overwrites the open save file with the value of <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a732c9c106c11becb803129cb11869229">OpenGameData</a> and then nullifies the referance to this file </p>
+<p>Overwrites the open save file with the value of OpenGameData and then nullifies the referance to this file </p>
+
+<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00057">57</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -270,79 +286,14 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This is the primary function in saving data. This will set the <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a732c9c106c11becb803129cb11869229">OpenGameData</a> to the value of <em>data</em>  (if <em>data</em>  is not <code>null</code>). <em>Warrning</em> This will not actually save the game data. You must call <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#ae3f391567867631d66709f3588169d66" title="Overwrites the open save file with the value of OpenGameData">OverwriteSaveFile</a> </p>
+<p>This is the primary function in saving data. This will set the OpenGameData to the value of <em>data</em>  (if <em>data</em>  is not <code>null</code>). <em>Warrning</em> This will not actually save the game data. You must call <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#ae3f391567867631d66709f3588169d66" title="Overwrites the open save file with the value of OpenGameData">OverwriteSaveFile</a> </p>
 
-</div>
-</div>
-<h2 class="groupheader">Property Documentation</h2>
-<a id="a6c4e709ab76f690300efc30862e1bb9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c4e709ab76f690300efc30862e1bb9d">&#9670;&nbsp;</a></span>GameOpen</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SaveSystemInternal.SaveGameManager.GameOpen</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a732c9c106c11becb803129cb11869229"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a732c9c106c11becb803129cb11869229">&#9670;&nbsp;</a></span>OpenGameData</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_save_data.html">SaveData</a> SaveSystemInternal.SaveGameManager.OpenGameData = null</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae37b30856b7d66219b52562f3f57fce9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae37b30856b7d66219b52562f3f57fce9">&#9670;&nbsp;</a></span>OpenGameMetaData</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_game_meta_data.html">GameMetaData</a> SaveSystemInternal.SaveGameManager.OpenGameMetaData = null</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00045">45</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Saving_Data/<a class="el" href="_save_game_manager_8cs.html">SaveGameManager.cs</a></li>
+<li>Saving_Data/<a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

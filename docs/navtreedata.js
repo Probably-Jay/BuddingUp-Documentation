@@ -35,7 +35,6 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
         [ "Properties", "functions_prop.html", null ]
       ] ]
     ] ],
@@ -47,7 +46,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_game_meta_data_8cs.html"
+"_game_meta_data_8cs_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

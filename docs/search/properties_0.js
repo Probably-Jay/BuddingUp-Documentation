@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['currentlyopengame_85',['CurrentlyOpenGame',['../class_save_manager.html#acc6c6beb5b3d00775c7c557ce1acc1a8',1,'SaveManager']]]
+  ['gamedata_46',['GameData',['../class_save_manager.html#ad1cc8930cb20e881d36360d7c589dbf1',1,'SaveManager']]]
 ];

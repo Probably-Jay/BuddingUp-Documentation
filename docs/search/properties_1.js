@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['gamedata_86',['GameData',['../class_save_manager.html#ad1cc8930cb20e881d36360d7c589dbf1',1,'SaveManager']]],
-  ['gameopen_87',['GameOpen',['../class_save_manager.html#adba49646b1831f8b23f72689764183f4',1,'SaveManager.GameOpen()'],['../class_save_system_internal_1_1_save_game_manager.html#a6c4e709ab76f690300efc30862e1bb9d',1,'SaveSystemInternal.SaveGameManager.GameOpen()']]]
+  ['registryfilepath_47',['RegistryFilePath',['../class_save_system_internal_1_1_save_registry_manager.html#aafea011f18e3348109eadfba22467d76',1,'SaveSystemInternal::SaveRegistryManager']]]
 ];
