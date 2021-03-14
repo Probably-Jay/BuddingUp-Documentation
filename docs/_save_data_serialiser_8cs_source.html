@@ -96,12 +96,12 @@ $(document).ready(function(){initNavTree('_save_data_serialiser_8cs_source.html'
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">// Jay 11/03</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_save_system_internal.html">SaveSystemInternal</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>SaveDataSerialiser</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_save_system_internal_1_1_save_data_serialiser.html">   15</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_save_system_internal_1_1_save_data_serialiser.html">SaveDataSerialiser</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">string</span> extention = <span class="stringliteral">&quot;.budSave&quot;</span>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> SavePath =&gt; Path.Combine(Application.persistentDataPath, <span class="stringliteral">&quot;gameSaves&quot;</span>);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> GameExists(<span class="keywordtype">string</span> localGameID) =&gt; FileExists(GetFilePath(localGameID));</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_save_system_internal_1_1_save_data_serialiser.html#ae86659fa4ad2e01c2c5c374307c6afcd">   25</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_save_system_internal_1_1_save_data_serialiser.html#ae86659fa4ad2e01c2c5c374307c6afcd">GameExists</a>(<span class="keywordtype">string</span> localGameID) =&gt; FileExists(GetFilePath(localGameID));</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">string</span> GetFilePath(<span class="keywordtype">string</span> localGameID) =&gt; Path.Combine(SavePath, GetFileName(localGameID));</div>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_save_data_serialiser_8cs_source.html'
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> FileExists(<span class="keywordtype">string</span> path) =&gt; Directory.Exists(SavePath) &amp;&amp; File.Exists(path);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> SaveGame(<span class="keywordtype">string</span> localGameID, SaveGameData data)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> SaveGame(<span class="keywordtype">string</span> localGameID, <a class="code" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> data)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordtype">string</span> path = GetFilePath(localGameID);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('_save_data_serialiser_8cs_source.html'
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> CreateNewSaveFile(<span class="keywordtype">string</span> localGameID)</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_save_system_internal_1_1_save_data_serialiser.html#a71a9402a9453f0497643b040f9cb2c18">   53</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_save_system_internal_1_1_save_data_serialiser.html#a71a9402a9453f0497643b040f9cb2c18">CreateNewSaveFile</a>(<span class="keywordtype">string</span> localGameID)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="comment">// if folder does not exist, create it</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">if</span> (!Directory.Exists(SavePath))</div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('_save_data_serialiser_8cs_source.html'
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span> (File.Exists(path)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            SaveGameData newSave = <span class="keyword">new</span> SaveGameData(localGameID);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> newSave = <span class="keyword">new</span> <a class="code" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a>(localGameID);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            SetHash(newSave);</div>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('_save_data_serialiser_8cs_source.html'
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> SaveGameData LoadGame(<span class="keywordtype">string</span> localGameID)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> LoadGame(<span class="keywordtype">string</span> localGameID)</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordtype">string</span> path = GetFilePath(localGameID);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">return</span> LoadData(path);</div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('_save_data_serialiser_8cs_source.html'
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="comment">//    throw new Exception(); // this will move to catch</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <span class="comment">//}</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="keywordflow">if</span> (!ValidateHash(data))</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e">ValidateHash</a>(data))</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                {</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    Debug.LogError(<span class="stringliteral">&quot;Save file is corrupt&quot;</span>);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    <span class="comment">// this maybe should do nothing</span></div>
@@ -210,20 +210,20 @@ $(document).ready(function(){initNavTree('_save_data_serialiser_8cs_source.html'
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            }</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> ValidateHash(SaveGameData data)</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e">  155</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e">ValidateHash</a>(<a class="code" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> data)</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordtype">byte</span>[] previousHash = (<span class="keywordtype">byte</span>[])data.hash.Clone(); <span class="comment">// deep copy</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordtype">byte</span>[] previousHash = (<span class="keywordtype">byte</span>[])data.<a class="code" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f">hash</a>.Clone(); <span class="comment">// deep copy</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            SetHash(data);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; previousHash.Length; i++)</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            {</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">if</span> (previousHash[i] != data.hash[i])</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">if</span> (previousHash[i] != data.<a class="code" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f">hash</a>[i])</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                    data.hash = previousHash; <span class="comment">// keep this unchanged</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                    data.<a class="code" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f">hash</a> = previousHash; <span class="comment">// keep this unchanged</span></div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                }</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            data.hash = previousHash; <span class="comment">// keep this unchanged</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            data.<a class="code" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f">hash</a> = previousHash; <span class="comment">// keep this unchanged</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
@@ -242,6 +242,12 @@ $(document).ready(function(){initNavTree('_save_data_serialiser_8cs_source.html'
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
+<div class="ttc" id="aclass_save_system_internal_1_1_save_data_serialiser_html"><div class="ttname"><a href="class_save_system_internal_1_1_save_data_serialiser.html">SaveSystemInternal.SaveDataSerialiser</a></div><div class="ttdoc">Static class responsible for serialising the SaveGameData data. Controlled by SaveGameManager....</div><div class="ttdef"><b>Definition:</b> <a href="_save_data_serialiser_8cs_source.html#l00015">SaveDataSerialiser.cs:16</a></div></div>
+<div class="ttc" id="aclass_save_system_internal_1_1_save_data_serialiser_html_a3dc42b1a155bbc56b2a5181181e23e9e"><div class="ttname"><a href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e">SaveSystemInternal.SaveDataSerialiser.ValidateHash</a></div><div class="ttdeci">static bool ValidateHash(SaveGameData data)</div><div class="ttdoc">Validates if the checksum hash based on the current data matches the one stored with this data when i...</div><div class="ttdef"><b>Definition:</b> <a href="_save_data_serialiser_8cs_source.html#l00155">SaveDataSerialiser.cs:155</a></div></div>
+<div class="ttc" id="aclass_save_system_internal_1_1_save_data_serialiser_html_a71a9402a9453f0497643b040f9cb2c18"><div class="ttname"><a href="class_save_system_internal_1_1_save_data_serialiser.html#a71a9402a9453f0497643b040f9cb2c18">SaveSystemInternal.SaveDataSerialiser.CreateNewSaveFile</a></div><div class="ttdeci">static bool CreateNewSaveFile(string localGameID)</div><div class="ttdoc">Creates a new empty save file using the gameID. If a file already exists there this has no effect.</div><div class="ttdef"><b>Definition:</b> <a href="_save_data_serialiser_8cs_source.html#l00053">SaveDataSerialiser.cs:53</a></div></div>
+<div class="ttc" id="aclass_save_system_internal_1_1_save_data_serialiser_html_ae86659fa4ad2e01c2c5c374307c6afcd"><div class="ttname"><a href="class_save_system_internal_1_1_save_data_serialiser.html#ae86659fa4ad2e01c2c5c374307c6afcd">SaveSystemInternal.SaveDataSerialiser.GameExists</a></div><div class="ttdeci">static bool GameExists(string localGameID)</div><div class="ttdoc">If a game file exists</div></div>
+<div class="ttc" id="aclass_save_system_internal_1_1_save_game_data_html"><div class="ttname"><a href="class_save_system_internal_1_1_save_game_data.html">SaveSystemInternal.SaveGameData</a></div><div class="ttdoc">Datastructure for holding the full data from a game in a serilaisable form. This is the final form of...</div><div class="ttdef"><b>Definition:</b> <a href="_save_game_data_8cs_source.html#l00013">SaveGameData.cs:14</a></div></div>
+<div class="ttc" id="aclass_save_system_internal_1_1_save_game_data_html_a4363c9203cf0e5dcfdbfa5eb66afce1f"><div class="ttname"><a href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f">SaveSystemInternal.SaveGameData.hash</a></div><div class="ttdeci">byte[] hash</div><div class="ttdoc">A hash of the data of this struct (excluting the hash variable), to detect corruption in loading data...</div><div class="ttdef"><b>Definition:</b> <a href="_save_game_data_8cs_source.html#l00096">SaveGameData.cs:96</a></div></div>
 <div class="ttc" id="anamespace_save_system_internal_html"><div class="ttname"><a href="namespace_save_system_internal.html">SaveSystemInternal</a></div><div class="ttdef"><b>Definition:</b> <a href="_save_data_utility_8cs_source.html#l00009">SaveDataUtility.cs:10</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

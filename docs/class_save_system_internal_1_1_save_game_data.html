@@ -139,13 +139,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>testValue</b></td></tr
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ab25dcd16387fbbd950fff3dbaf8d7807"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_data.html#ab25dcd16387fbbd950fff3dbaf8d7807">HashIsValid</a><code> [get]</code></td></tr>
-<tr class="memdesc:ab25dcd16387fbbd950fff3dbaf8d7807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls SaveSystemInternal.SaveDataSerialiser.ValidateHash to compare the data to it's hash  <a href="class_save_system_internal_1_1_save_game_data.html#ab25dcd16387fbbd950fff3dbaf8d7807">More...</a><br /></td></tr>
+<tr class="memdesc:ab25dcd16387fbbd950fff3dbaf8d7807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e" title="Validates if the checksum hash based on the current data matches the one stored with this data when i...">SaveSystemInternal.SaveDataSerialiser.ValidateHash</a> to compare the data to it's hash  <a href="class_save_system_internal_1_1_save_game_data.html#ab25dcd16387fbbd950fff3dbaf8d7807">More...</a><br /></td></tr>
 <tr class="separator:ab25dcd16387fbbd950fff3dbaf8d7807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Datastructure for holding the full data from a game in a serilaisable form. This is the final form of data before it is serialised, and it is deserialised to this structure. This will not be the direct interface for collecting data from objects during the game - this will be performed by <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="_save_game_data_8cs_source.html#l00013">13</a> of file <a class="el" href="_save_game_data_8cs_source.html">SaveGameData.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7e057d36ae12e62fc2700d0fc2539454"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e057d36ae12e62fc2700d0fc2539454">&#9670;&nbsp;</a></span>SaveGameData() <span class="overload">[1/2]</span></h2>
@@ -170,8 +168,6 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="_save_game_data_8cs_source.html#l00023">23</a> of file <a class="el" href="_save_game_data_8cs_source.html">SaveGameData.cs</a>.</p>
 
 </div>
 </div>
@@ -199,8 +195,6 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_save_game_data_8cs_source.html#l00043">43</a> of file <a class="el" href="_save_game_data_8cs_source.html">SaveGameData.cs</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -218,8 +212,6 @@ Properties</h2></td></tr>
 
 <p>A hash of the data of this struct (excluting the <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f" title="A hash of the data of this struct (excluting the hash variable), to detect corruption in loading data...">hash</a> variable), to detect corruption in loading data. Gurenteed to be initialised before serialisation </p>
 
-<p class="definition">Definition at line <a class="el" href="_save_game_data_8cs_source.html#l00096">96</a> of file <a class="el" href="_save_game_data_8cs_source.html">SaveGameData.cs</a>.</p>
-
 </div>
 </div>
 <a id="a5e6d86216cdc3599e7d2f023fc15342f"></a>
@@ -235,8 +227,6 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The action points for Player.PlayerEnum.Player0. In the order defined by TurnPoints.PointType. This has to be a 1D array due to serialisation limitations </p>
-
-<p class="definition">Definition at line <a class="el" href="_save_game_data_8cs_source.html#l00079">79</a> of file <a class="el" href="_save_game_data_8cs_source.html">SaveGameData.cs</a>.</p>
 
 </div>
 </div>
@@ -254,8 +244,6 @@ Properties</h2></td></tr>
 
 <p>The mood goal for Player.PlayerEnum.Player0. This has to be a 1D array due to serialisation limitations (hence the breach of this Pigeon best-practices regarding diferent conceptual-type seperation) </p>
 
-<p class="definition">Definition at line <a class="el" href="_save_game_data_8cs_source.html#l00070">70</a> of file <a class="el" href="_save_game_data_8cs_source.html">SaveGameData.cs</a>.</p>
-
 </div>
 </div>
 <a id="ab2d9d724cfbb2fbe0b51c527b5a6e46c"></a>
@@ -272,8 +260,6 @@ Properties</h2></td></tr>
 
 <p>See <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a5e6d86216cdc3599e7d2f023fc15342f" title="The action points for Player.PlayerEnum.Player0. In the order defined by TurnPoints....">p1actionPoints</a>. For Player.PlayerEnum.Player1 </p>
 
-<p class="definition">Definition at line <a class="el" href="_save_game_data_8cs_source.html#l00083">83</a> of file <a class="el" href="_save_game_data_8cs_source.html">SaveGameData.cs</a>.</p>
-
 </div>
 </div>
 <a id="a3f1a005086004ee0115915f815506650"></a>
@@ -289,8 +275,6 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>See <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a35b2f858eec8cc801d459fd48b06cf88" title="The mood goal for Player.PlayerEnum.Player0. This has to be a 1D array due to serialisation limitatio...">p1gardenGoals</a>. For Player.PlayerEnum.Player1 </p>
-
-<p class="definition">Definition at line <a class="el" href="_save_game_data_8cs_source.html#l00074">74</a> of file <a class="el" href="_save_game_data_8cs_source.html">SaveGameData.cs</a>.</p>
 
 </div>
 </div>
@@ -315,14 +299,12 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Calls SaveSystemInternal.SaveDataSerialiser.ValidateHash to compare the data to it's hash </p>
-
-<p class="definition">Definition at line <a class="el" href="_save_game_data_8cs_source.html#l00100">100</a> of file <a class="el" href="_save_game_data_8cs_source.html">SaveGameData.cs</a>.</p>
+<p>Calls <a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e" title="Validates if the checksum hash based on the current data matches the one stored with this data when i...">SaveSystemInternal.SaveDataSerialiser.ValidateHash</a> to compare the data to it's hash </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Data_Structures/<a class="el" href="_save_game_data_8cs_source.html">SaveGameData.cs</a></li>
+<li>Data_Structures/SaveGameData.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

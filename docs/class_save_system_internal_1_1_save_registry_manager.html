@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('class_save_system_internal_1_1_save_re
 </div><!--header-->
 <div class="contents">
 
-<p>Class which handles the save registry file, responsible for storing metadata about saved games including thier ID and filepath. Controlls SaveGameRegistrySerialiser. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveGameManager and Sa...">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a>  
+<p>Class which handles the save registry file, responsible for storing metadata about saved games including thier ID and filepath. Controlls <a class="el" href="class_save_system_internal_1_1_save_game_registry_serialiser.html" title="Static class responsible for serialising the SaveGameRegistryData data. Controlled by SaveRegistryMan...">SaveGameRegistrySerialiser</a>. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveGameManager and Sa...">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a>  
  <a href="class_save_system_internal_1_1_save_registry_manager.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -121,9 +121,7 @@ Properties</h2></td></tr>
 <tr class="separator:aafea011f18e3348109eadfba22467d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class which handles the save registry file, responsible for storing metadata about saved games including thier ID and filepath. Controlls SaveGameRegistrySerialiser. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveGameManager and Sa...">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00013">13</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
+<div class="textblock"><p>Class which handles the save registry file, responsible for storing metadata about saved games including thier ID and filepath. Controlls <a class="el" href="class_save_system_internal_1_1_save_game_registry_serialiser.html" title="Static class responsible for serialising the SaveGameRegistryData data. Controlled by SaveRegistryMan...">SaveGameRegistrySerialiser</a>. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveGameManager and Sa...">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="addf864592762399afa4f5b1abbdbf16a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addf864592762399afa4f5b1abbdbf16a">&#9670;&nbsp;</a></span>AddNewGame()</h2>
@@ -149,8 +147,6 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>If the action was sucessful</dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00094">94</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
 
 </div>
 </div>
@@ -191,8 +187,6 @@ Properties</h2></td></tr>
 <p>Get the list of saved games that are in the registry file </p>
 <dl class="section return"><dt>Returns</dt><dd>Will return null if registry empty or cannot be read</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00031">31</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
-
 </div>
 </div>
 <a id="a84849ae7ff1f09e307f12147f02d5f39"></a>
@@ -213,8 +207,6 @@ Properties</h2></td></tr>
 
 <p>Get a saved game from the registry file by game ID </p>
 <dl class="section return"><dt>Returns</dt><dd>Will return null if registry empty or cannot be read</dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00043">43</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
 
 </div>
 </div>
@@ -243,8 +235,6 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>If the action was sucessful</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00079">79</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
-
 </div>
 </div>
 <a id="ac5466a8923ac28275cc1eec975b75003"></a>
@@ -272,8 +262,6 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>If the action was sucessful</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00064">64</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -299,12 +287,10 @@ Properties</h2></td></tr>
 
 <p>The location the registry file should be stored </p>
 
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00018">18</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Saving_Data/<a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a></li>
+<li>Saving_Data/SaveRegistryManager.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

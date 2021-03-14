@@ -13,5 +13,6 @@ var class_save_manager =
     [ "CurrentlyOpenGame", "class_save_manager.html#acc6c6beb5b3d00775c7c557ce1acc1a8", null ],
     [ "GameData", "class_save_manager.html#a57e2f1d0bb5525b8ef9bd8a7e74ecaad", null ],
     [ "GameOpen", "class_save_manager.html#adba49646b1831f8b23f72689764183f4", null ],
+    [ "Instance", "class_save_manager.html#a5e5af2018c06730cebba507d7a4488f4", null ],
     [ "OpenSaveGameData", "class_save_manager.html#a0369f42a7e0d1b9da3f4734d858754ef", null ]
 ];

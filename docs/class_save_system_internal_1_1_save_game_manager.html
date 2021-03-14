@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('class_save_system_internal_1_1_save_ga
 </div><!--header-->
 <div class="contents">
 
-<p>Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveGameManager and Sa...">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html" title="Class which handles the save registry file, responsible for storing metadata about saved games includ...">SaveRegistryManager</a>  
+<p>Class which handles the saveing ig game files. Controlls <a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html" title="Static class responsible for serialising the SaveGameData data. Controlled by SaveGameManager....">SaveDataSerialiser</a>. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveGameManager and Sa...">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html" title="Class which handles the save registry file, responsible for storing metadata about saved games includ...">SaveRegistryManager</a>  
  <a href="class_save_system_internal_1_1_save_game_manager.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -137,9 +137,7 @@ Properties</h2></td></tr>
 <tr class="separator:a6c4e709ab76f690300efc30862e1bb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveGameManager and Sa...">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html" title="Class which handles the save registry file, responsible for storing metadata about saved games includ...">SaveRegistryManager</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00013">13</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
+<div class="textblock"><p>Class which handles the saveing ig game files. Controlls <a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html" title="Static class responsible for serialising the SaveGameData data. Controlled by SaveGameManager....">SaveDataSerialiser</a>. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveGameManager and Sa...">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html" title="Class which handles the save registry file, responsible for storing metadata about saved games includ...">SaveRegistryManager</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="add10599b235fcb88c40fb4180c7e9612"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add10599b235fcb88c40fb4180c7e9612">&#9670;&nbsp;</a></span>CloseGame()</h2>
@@ -157,8 +155,6 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Nullifies the referance to the open file (open does not imply a resources lock) </p>
-
-<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00093">93</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -205,8 +201,6 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a provided game if it exists. If the game provided is currenly open then it is closed. Will not fail. </p>
-
-<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00102">102</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -270,8 +264,6 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00040">40</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
-
 </div>
 </div>
 <a id="ae3f391567867631d66709f3588169d66"></a>
@@ -290,8 +282,6 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overwrites the open save file with the value of <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#ab403c2455289d6b6ce59a6bf555f0635" title="The SaveGameData structure of the currently open game, holding the data from the file or and staged s...">OpenGameData</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00082">82</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -312,8 +302,6 @@ Properties</h2></td></tr>
 
 <p>Overwrites the open save file with the value of <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#ab403c2455289d6b6ce59a6bf555f0635" title="The SaveGameData structure of the currently open game, holding the data from the file or and staged s...">OpenGameData</a> and then nullifies the referance to this file </p>
 
-<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00069">69</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
-
 </div>
 </div>
 <a id="a80cb850ffc9aaf1099052a3dd81c99f7"></a>
@@ -333,8 +321,6 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This is the primary function in saving data. This will set the <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#ab403c2455289d6b6ce59a6bf555f0635" title="The SaveGameData structure of the currently open game, holding the data from the file or and staged s...">OpenGameData</a> to the value of <em>data</em>  (if <em>data</em>  is not <code>null</code>). <em>Warrning</em> This will not actually save the game data. You must call <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#ae3f391567867631d66709f3588169d66" title="Overwrites the open save file with the value of OpenGameData">OverwriteSaveFile</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00057">57</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -361,8 +347,6 @@ Properties</h2></td></tr>
 
 <p>If there is currently a game open </p>
 
-<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00027">27</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
-
 </div>
 </div>
 <a id="ab403c2455289d6b6ce59a6bf555f0635"></a>
@@ -386,8 +370,6 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serilaisable form. This is the final form of...">SaveGameData</a> structure of the currently open game, holding the data from the file or and staged saves (see <a class="el" href="class_save_system_internal_1_1_save_game_manager.html#a80cb850ffc9aaf1099052a3dd81c99f7" title="This is the primary function in saving data. This will set the OpenGameData to the value of data  (if...">StageSaveData(SaveGameData)</a>). <code>null</code> if there is no game open </p>
-
-<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00023">23</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -413,12 +395,10 @@ Properties</h2></td></tr>
 
 <p>The <a class="el" href="class_save_system_internal_1_1_game_meta_data.html" title="A Datastructure that represents a game">GameMetaData</a> structure of the currently open game. <code>null</code> if there is no game open </p>
 
-<p class="definition">Definition at line <a class="el" href="_save_game_manager_8cs_source.html#l00018">18</a> of file <a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Saving_Data/<a class="el" href="_save_game_manager_8cs_source.html">SaveGameManager.cs</a></li>
+<li>Saving_Data/SaveGameManager.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
