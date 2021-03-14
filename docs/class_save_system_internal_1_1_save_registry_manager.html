@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('class_save_system_internal_1_1_save_re
 </div><!--header-->
 <div class="contents">
 
-<p>Class which handles the save registry file, responsible for storing metadata about saved games including thier ID and filepath  
+<p>Class which handles the save registry file, responsible for storing metadata about saved games including thier ID and filepath. Controlls SaveGameRegistrySerialiser. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveGameManager and Sa...">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a>  
  <a href="class_save_system_internal_1_1_save_registry_manager.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -98,19 +98,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a69e7aa5547b8d37516cb7c56313a2ca3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#a69e7aa5547b8d37516cb7c56313a2ca3">CreateRegistryFile</a> ()</td></tr>
 <tr class="memdesc:a69e7aa5547b8d37516cb7c56313a2ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the registry file if it does not exist, else it does nothing  <a href="class_save_system_internal_1_1_save_registry_manager.html#a69e7aa5547b8d37516cb7c56313a2ca3">More...</a><br /></td></tr>
 <tr class="separator:a69e7aa5547b8d37516cb7c56313a2ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adda7145d08895feb190344049908cb00"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_game_meta_data.html">GameMetaData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#adda7145d08895feb190344049908cb00">GetAllStoredGames</a> ()</td></tr>
+<tr class="memitem:adda7145d08895feb190344049908cb00"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#adda7145d08895feb190344049908cb00">GetAllStoredGames</a> ()</td></tr>
 <tr class="memdesc:adda7145d08895feb190344049908cb00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of saved games that are in the registry file  <a href="class_save_system_internal_1_1_save_registry_manager.html#adda7145d08895feb190344049908cb00">More...</a><br /></td></tr>
 <tr class="separator:adda7145d08895feb190344049908cb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84849ae7ff1f09e307f12147f02d5f39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_meta_data.html">GameMetaData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#a84849ae7ff1f09e307f12147f02d5f39">GetGame</a> (string gameID)</td></tr>
+<tr class="memitem:a84849ae7ff1f09e307f12147f02d5f39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#a84849ae7ff1f09e307f12147f02d5f39">GetGame</a> (string gameID)</td></tr>
 <tr class="memdesc:a84849ae7ff1f09e307f12147f02d5f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a saved game from the registry file by game ID  <a href="class_save_system_internal_1_1_save_registry_manager.html#a84849ae7ff1f09e307f12147f02d5f39">More...</a><br /></td></tr>
 <tr class="separator:a84849ae7ff1f09e307f12147f02d5f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5466a8923ac28275cc1eec975b75003"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#ac5466a8923ac28275cc1eec975b75003">RemoveDeletedGame</a> (string gameID)</td></tr>
 <tr class="memdesc:ac5466a8923ac28275cc1eec975b75003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a game from the registry. <em>Warning</em> This will not delete the actual game save file, only the referance to it. Calling this before deleting the game file will result in a resource leak  <a href="class_save_system_internal_1_1_save_registry_manager.html#ac5466a8923ac28275cc1eec975b75003">More...</a><br /></td></tr>
 <tr class="separator:ac5466a8923ac28275cc1eec975b75003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b235e3dd1649ba721131b7bec56e71c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#a7b235e3dd1649ba721131b7bec56e71c">RemoveDeletedGame</a> (<a class="el" href="class_game_meta_data.html">GameMetaData</a> game)</td></tr>
+<tr class="memitem:a7b235e3dd1649ba721131b7bec56e71c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#a7b235e3dd1649ba721131b7bec56e71c">RemoveDeletedGame</a> (<a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a> game)</td></tr>
 <tr class="memdesc:a7b235e3dd1649ba721131b7bec56e71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a game from the registry. <em>Warning</em> This will not delete the actual game save file, only the referance to it. Calling this before deleting the game file will result in a resource leak  <a href="class_save_system_internal_1_1_save_registry_manager.html#a7b235e3dd1649ba721131b7bec56e71c">More...</a><br /></td></tr>
 <tr class="separator:a7b235e3dd1649ba721131b7bec56e71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addf864592762399afa4f5b1abbdbf16a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#addf864592762399afa4f5b1abbdbf16a">AddNewGame</a> (<a class="el" href="class_game_meta_data.html">GameMetaData</a> game)</td></tr>
+<tr class="memitem:addf864592762399afa4f5b1abbdbf16a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_registry_manager.html#addf864592762399afa4f5b1abbdbf16a">AddNewGame</a> (<a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a> game)</td></tr>
 <tr class="memdesc:addf864592762399afa4f5b1abbdbf16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new game file to the registry. This function does not create a save game. <em>Warning</em> Failure to call this function after creating a new save file will make the file inaccessible which will result in a resource leak  <a href="class_save_system_internal_1_1_save_registry_manager.html#addf864592762399afa4f5b1abbdbf16a">More...</a><br /></td></tr>
 <tr class="separator:addf864592762399afa4f5b1abbdbf16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -121,9 +121,9 @@ Properties</h2></td></tr>
 <tr class="separator:aafea011f18e3348109eadfba22467d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class which handles the save registry file, responsible for storing metadata about saved games including thier ID and filepath </p>
+<div class="textblock"><p>Class which handles the save registry file, responsible for storing metadata about saved games including thier ID and filepath. Controlls SaveGameRegistrySerialiser. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveGameManager and Sa...">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00012">12</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00013">13</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="addf864592762399afa4f5b1abbdbf16a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addf864592762399afa4f5b1abbdbf16a">&#9670;&nbsp;</a></span>AddNewGame()</h2>
@@ -134,7 +134,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">bool SaveSystemInternal.SaveRegistryManager.AddNewGame </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game_meta_data.html">GameMetaData</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a>&#160;</td>
           <td class="paramname"><em>game</em></td><td>)</td>
           <td></td>
         </tr>
@@ -150,7 +150,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>If the action was sucessful</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00097">97</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00094">94</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
 
 </div>
 </div>
@@ -180,7 +180,7 @@ Properties</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="class_game_meta_data.html">GameMetaData</a>&gt; SaveSystemInternal.SaveRegistryManager.GetAllStoredGames </td>
+          <td class="memname">List&lt;<a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a>&gt; SaveSystemInternal.SaveRegistryManager.GetAllStoredGames </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -191,7 +191,7 @@ Properties</h2></td></tr>
 <p>Get the list of saved games that are in the registry file </p>
 <dl class="section return"><dt>Returns</dt><dd>Will return null if registry empty or cannot be read</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00030">30</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00031">31</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
 
 </div>
 </div>
@@ -202,7 +202,7 @@ Properties</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_game_meta_data.html">GameMetaData</a> SaveSystemInternal.SaveRegistryManager.GetGame </td>
+          <td class="memname"><a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a> SaveSystemInternal.SaveRegistryManager.GetGame </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>gameID</em></td><td>)</td>
@@ -214,7 +214,7 @@ Properties</h2></td></tr>
 <p>Get a saved game from the registry file by game ID </p>
 <dl class="section return"><dt>Returns</dt><dd>Will return null if registry empty or cannot be read</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00042">42</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00043">43</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
 
 </div>
 </div>
@@ -227,7 +227,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">bool SaveSystemInternal.SaveRegistryManager.RemoveDeletedGame </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game_meta_data.html">GameMetaData</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a>&#160;</td>
           <td class="paramname"><em>game</em></td><td>)</td>
           <td></td>
         </tr>
@@ -237,13 +237,13 @@ Properties</h2></td></tr>
 <p>Remove a game from the registry. <em>Warning</em> This will not delete the actual game save file, only the referance to it. Calling this before deleting the game file will result in a resource leak </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">gameID</td><td>The ID of the game to be deleted</td></tr>
+    <tr><td class="paramname">game</td><td>The ID of the game to be deleted</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>If the action was sucessful</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00082">82</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00079">79</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>If the action was sucessful</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00067">67</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00064">64</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
 
 </div>
 </div>
@@ -299,7 +299,7 @@ Properties</h2></td></tr>
 
 <p>The location the registry file should be stored </p>
 
-<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00017">17</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_save_registry_manager_8cs_source.html#l00018">18</a> of file <a class="el" href="_save_registry_manager_8cs_source.html">SaveRegistryManager.cs</a>.</p>
 
 </div>
 </div>

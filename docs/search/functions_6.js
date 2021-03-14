@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['savegame_44',['SaveGame',['../class_save_manager.html#ae3dc6c1b0e016849b04c247c77047ab5',1,'SaveManager']]],
-  ['stagesavedata_45',['StageSaveData',['../class_save_system_internal_1_1_save_game_manager.html#a0b4561ea15e6cc031cc2acec3314beb7',1,'SaveSystemInternal::SaveGameManager']]]
+  ['opengame_65',['OpenGame',['../class_save_manager.html#a0f02267474831401dfd03254aa7c1285',1,'SaveManager.OpenGame(GameMetaData game)'],['../class_save_manager.html#ad4bcaca5f3ef8d90e6b7928ae2ec716f',1,'SaveManager.OpenGame(string gameID)']]],
+  ['opensave_66',['OpenSave',['../class_save_system_internal_1_1_save_game_manager.html#a3ce333a5ec9f186a5f1855bff33048f7',1,'SaveSystemInternal::SaveGameManager']]],
+  ['overwritesavefile_67',['OverwriteSaveFile',['../class_save_system_internal_1_1_save_game_manager.html#ae3f391567867631d66709f3588169d66',1,'SaveSystemInternal::SaveGameManager']]],
+  ['overwritesavefileandclosegame_68',['OverwriteSaveFileAndCloseGame',['../class_save_system_internal_1_1_save_game_manager.html#a54f5d08594696a9996fe6da29efac4f1',1,'SaveSystemInternal::SaveGameManager']]]
 ];
