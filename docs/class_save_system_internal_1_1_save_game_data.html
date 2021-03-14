@@ -91,13 +91,13 @@ $(document).ready(function(){initNavTree('class_save_system_internal_1_1_save_ga
 </div><!--header-->
 <div class="contents">
 
-<p>Datastructure for holding the full data from a game in a serilaisable form. This is the final form of data before it is serialised, and it is deserialised to this structure. This will not be the direct interface for collecting data from objects during the game - this will be performed by <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a>  
+<p>Datastructure for holding the full data from a game in a serialisable form. This is the final form of data before it is serialised, and it is deserialised to this structure. This will not be the direct interface for collecting data from objects during the game. For that, see <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a>  
  <a href="class_save_system_internal_1_1_save_game_data.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e057d36ae12e62fc2700d0fc2539454"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_data.html#a7e057d36ae12e62fc2700d0fc2539454">SaveGameData</a> (string localID)</td></tr>
-<tr class="memdesc:a7e057d36ae12e62fc2700d0fc2539454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor of the serialisable save data structure. Requires <em>localID</em>  as localGameID cannot be lost  <a href="class_save_system_internal_1_1_save_game_data.html#a7e057d36ae12e62fc2700d0fc2539454">More...</a><br /></td></tr>
+<tr class="memdesc:a7e057d36ae12e62fc2700d0fc2539454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor of the serialisable save data structure. Requires <em>localID</em>  so that <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a39fc15393e5f1049d8ffc35dd653a74b" title="The ID of a game, set here so the associated GameMetaData structure can be recovered if lost">localGameID</a> will never be lost  <a href="class_save_system_internal_1_1_save_game_data.html#a7e057d36ae12e62fc2700d0fc2539454">More...</a><br /></td></tr>
 <tr class="separator:a7e057d36ae12e62fc2700d0fc2539454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f6902212eae19785177e6446ca10d85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_data.html#a6f6902212eae19785177e6446ca10d85">SaveGameData</a> (<a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> other)</td></tr>
 <tr class="memdesc:a6f6902212eae19785177e6446ca10d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor, deep-copies/clones all memebers from <em>other</em>   <a href="class_save_system_internal_1_1_save_game_data.html#a6f6902212eae19785177e6446ca10d85">More...</a><br /></td></tr>
@@ -108,8 +108,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad4365dbf2b01ba7b3ec8de73e7d1a78f"><td class="memItemLeft" align="right" valign="top"><a id="ad4365dbf2b01ba7b3ec8de73e7d1a78f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>initialised</b></td></tr>
 <tr class="separator:ad4365dbf2b01ba7b3ec8de73e7d1a78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39fc15393e5f1049d8ffc35dd653a74b"><td class="memItemLeft" align="right" valign="top"><a id="a39fc15393e5f1049d8ffc35dd653a74b"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>localGameID</b></td></tr>
+<tr class="memitem:a39fc15393e5f1049d8ffc35dd653a74b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_data.html#a39fc15393e5f1049d8ffc35dd653a74b">localGameID</a></td></tr>
+<tr class="memdesc:a39fc15393e5f1049d8ffc35dd653a74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of a game, set here so the associated <a class="el" href="class_save_system_internal_1_1_game_meta_data.html" title="A Datastructure that represents a game file, a list of these is stored on the registry file">GameMetaData</a> structure can be recovered if lost  <a href="class_save_system_internal_1_1_save_game_data.html#a39fc15393e5f1049d8ffc35dd653a74b">More...</a><br /></td></tr>
 <tr class="separator:a39fc15393e5f1049d8ffc35dd653a74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35b2f858eec8cc801d459fd48b06cf88"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_data.html#a35b2f858eec8cc801d459fd48b06cf88">p1gardenGoals</a></td></tr>
 <tr class="memdesc:a35b2f858eec8cc801d459fd48b06cf88"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mood goal for Player.PlayerEnum.Player0. This has to be a 1D array due to serialisation limitations (hence the breach of this Pigeon best-practices regarding diferent conceptual-type seperation)  <a href="class_save_system_internal_1_1_save_game_data.html#a35b2f858eec8cc801d459fd48b06cf88">More...</a><br /></td></tr>
@@ -123,8 +123,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>localGameID</b></td
 <tr class="memitem:ab2d9d724cfbb2fbe0b51c527b5a6e46c"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_data.html#ab2d9d724cfbb2fbe0b51c527b5a6e46c">p2actionPoints</a></td></tr>
 <tr class="memdesc:ab2d9d724cfbb2fbe0b51c527b5a6e46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a5e6d86216cdc3599e7d2f023fc15342f" title="The action points for Player.PlayerEnum.Player0. In the order defined by TurnPoints....">p1actionPoints</a>. For Player.PlayerEnum.Player1  <a href="class_save_system_internal_1_1_save_game_data.html#ab2d9d724cfbb2fbe0b51c527b5a6e46c">More...</a><br /></td></tr>
 <tr class="separator:ab2d9d724cfbb2fbe0b51c527b5a6e46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a603288d9767f6008f8dee56e36c518ba"><td class="memItemLeft" align="right" valign="top"><a id="a603288d9767f6008f8dee56e36c518ba"></a>
-<a class="el" href="class_save_system_internal_1_1_serialised_plant_data.html">SerialisedPlantData</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>plants</b></td></tr>
+<tr class="memitem:a603288d9767f6008f8dee56e36c518ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_save_system_internal_1_1_serialised_plant_data.html">SerialisedPlantData</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_data.html#a603288d9767f6008f8dee56e36c518ba">plants</a></td></tr>
+<tr class="memdesc:a603288d9767f6008f8dee56e36c518ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strucure of <a class="el" href="class_save_system_internal_1_1_serialised_plant_data.html" title="A serialisable representation of a plant">SerialisedPlantData</a> to store all of the plants in the game  <a href="class_save_system_internal_1_1_save_game_data.html#a603288d9767f6008f8dee56e36c518ba">More...</a><br /></td></tr>
 <tr class="separator:a603288d9767f6008f8dee56e36c518ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a0230cefd44aae18be25ad73d247fc7"><td class="memItemLeft" align="right" valign="top"><a id="a4a0230cefd44aae18be25ad73d247fc7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>turnNumber</b></td></tr>
@@ -139,11 +139,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>testValue</b></td></tr
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ab25dcd16387fbbd950fff3dbaf8d7807"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_data.html#ab25dcd16387fbbd950fff3dbaf8d7807">HashIsValid</a><code> [get]</code></td></tr>
-<tr class="memdesc:ab25dcd16387fbbd950fff3dbaf8d7807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e" title="Validates if the checksum hash based on the current data matches the one stored with this data when i...">SaveSystemInternal.SaveDataSerialiser.ValidateHash</a> to compare the data to it's hash  <a href="class_save_system_internal_1_1_save_game_data.html#ab25dcd16387fbbd950fff3dbaf8d7807">More...</a><br /></td></tr>
+<tr class="memdesc:ab25dcd16387fbbd950fff3dbaf8d7807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="class_save_system_internal_1_1_save_data_utility.html#a5fe95d82c933a6e9bac147f8696bf3fd" title="Validates if the checksum hash based on the current data matches the one stored with this data when i...">SaveDataUtility.ValidateHash(SaveGameData)</a> to compare the data to it's hash  <a href="class_save_system_internal_1_1_save_game_data.html#ab25dcd16387fbbd950fff3dbaf8d7807">More...</a><br /></td></tr>
 <tr class="separator:ab25dcd16387fbbd950fff3dbaf8d7807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Datastructure for holding the full data from a game in a serilaisable form. This is the final form of data before it is serialised, and it is deserialised to this structure. This will not be the direct interface for collecting data from objects during the game - this will be performed by <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> </p>
+<div class="textblock"><p>Datastructure for holding the full data from a game in a serialisable form. This is the final form of data before it is serialised, and it is deserialised to this structure. This will not be the direct interface for collecting data from objects during the game. For that, see <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7e057d36ae12e62fc2700d0fc2539454"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e057d36ae12e62fc2700d0fc2539454">&#9670;&nbsp;</a></span>SaveGameData() <span class="overload">[1/2]</span></h2>
@@ -161,7 +161,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Default constructor of the serialisable save data structure. Requires <em>localID</em>  as localGameID cannot be lost </p>
+<p>Default constructor of the serialisable save data structure. Requires <em>localID</em>  so that <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a39fc15393e5f1049d8ffc35dd653a74b" title="The ID of a game, set here so the associated GameMetaData structure can be recovered if lost">localGameID</a> will never be lost </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">localID</td><td>The ID of the game this data describes</td></tr>
@@ -190,7 +190,7 @@ Properties</h2></td></tr>
 <p>Copy constructor, deep-copies/clones all memebers from <em>other</em>  </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>A <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serilaisable form. This is the final form of...">SaveGameData</a> that should be copied</td></tr>
+    <tr><td class="paramname">other</td><td>A <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a> that should be copied</td></tr>
   </table>
   </dd>
 </dl>
@@ -211,6 +211,22 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A hash of the data of this struct (excluting the <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f" title="A hash of the data of this struct (excluting the hash variable), to detect corruption in loading data...">hash</a> variable), to detect corruption in loading data. Gurenteed to be initialised before serialisation </p>
+
+</div>
+</div>
+<a id="a39fc15393e5f1049d8ffc35dd653a74b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fc15393e5f1049d8ffc35dd653a74b">&#9670;&nbsp;</a></span>localGameID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SaveSystemInternal.SaveGameData.localGameID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The ID of a game, set here so the associated <a class="el" href="class_save_system_internal_1_1_game_meta_data.html" title="A Datastructure that represents a game file, a list of these is stored on the registry file">GameMetaData</a> structure can be recovered if lost </p>
 
 </div>
 </div>
@@ -278,6 +294,22 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a603288d9767f6008f8dee56e36c518ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a603288d9767f6008f8dee56e36c518ba">&#9670;&nbsp;</a></span>plants</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_save_system_internal_1_1_serialised_plant_data.html">SerialisedPlantData</a> [] SaveSystemInternal.SaveGameData.plants</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Strucure of <a class="el" href="class_save_system_internal_1_1_serialised_plant_data.html" title="A serialisable representation of a plant">SerialisedPlantData</a> to store all of the plants in the game </p>
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a id="ab25dcd16387fbbd950fff3dbaf8d7807"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab25dcd16387fbbd950fff3dbaf8d7807">&#9670;&nbsp;</a></span>HashIsValid</h2>
@@ -299,7 +331,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Calls <a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e" title="Validates if the checksum hash based on the current data matches the one stored with this data when i...">SaveSystemInternal.SaveDataSerialiser.ValidateHash</a> to compare the data to it's hash </p>
+<p>Calls <a class="el" href="class_save_system_internal_1_1_save_data_utility.html#a5fe95d82c933a6e9bac147f8696bf3fd" title="Validates if the checksum hash based on the current data matches the one stored with this data when i...">SaveDataUtility.ValidateHash(SaveGameData)</a> to compare the data to it's hash </p>
 
 </div>
 </div>

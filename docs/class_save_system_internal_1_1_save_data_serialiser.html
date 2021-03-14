@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('class_save_system_internal_1_1_save_da
 </div><!--header-->
 <div class="contents">
 
-<p>Static class responsible for serialising the <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serilaisable form. This is the final form of...">SaveGameData</a> data. Controlled by <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_registry_serialiser.html" title="Static class responsible for serialising the SaveGameRegistryData data. Controlled by SaveRegistryMan...">SaveGameRegistrySerialiser</a>  
+<p>Static class responsible for serialising the <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a> data. Controlled by <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_registry_serialiser.html" title="Static class responsible for serialising the SaveGameRegistryData data. Controlled by SaveRegistryMan...">SaveGameRegistrySerialiser</a>  
  <a href="class_save_system_internal_1_1_save_data_serialiser.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -98,30 +98,27 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae86659fa4ad2e01c2c5c374307c6afcd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#ae86659fa4ad2e01c2c5c374307c6afcd">GameExists</a> (string localGameID)</td></tr>
 <tr class="memdesc:ae86659fa4ad2e01c2c5c374307c6afcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a game file exists  <a href="class_save_system_internal_1_1_save_data_serialiser.html#ae86659fa4ad2e01c2c5c374307c6afcd">More...</a><br /></td></tr>
 <tr class="separator:ae86659fa4ad2e01c2c5c374307c6afcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa85a801aba061d4ced40f448962a9598"><td class="memItemLeft" align="right" valign="top"><a id="aa85a801aba061d4ced40f448962a9598"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveGame</b> (string localGameID, <a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> data)</td></tr>
-<tr class="separator:aa85a801aba061d4ced40f448962a9598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a9402a9453f0497643b040f9cb2c18"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#a71a9402a9453f0497643b040f9cb2c18">CreateNewSaveFile</a> (string localGameID)</td></tr>
 <tr class="memdesc:a71a9402a9453f0497643b040f9cb2c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new empty save file using the gameID. If a file already exists there this has no effect.  <a href="class_save_system_internal_1_1_save_data_serialiser.html#a71a9402a9453f0497643b040f9cb2c18">More...</a><br /></td></tr>
 <tr class="separator:a71a9402a9453f0497643b040f9cb2c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ecc0d08843df1e4cc1e8ba5516482b4"><td class="memItemLeft" align="right" valign="top"><a id="a1ecc0d08843df1e4cc1e8ba5516482b4"></a>
-static <a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoadGame</b> (string localGameID)</td></tr>
+<tr class="memitem:aa85a801aba061d4ced40f448962a9598"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#aa85a801aba061d4ced40f448962a9598">SaveGame</a> (string localGameID, <a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> data)</td></tr>
+<tr class="memdesc:aa85a801aba061d4ced40f448962a9598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data provided to the save file given by the <em>localGameID</em>   <a href="class_save_system_internal_1_1_save_data_serialiser.html#aa85a801aba061d4ced40f448962a9598">More...</a><br /></td></tr>
+<tr class="separator:aa85a801aba061d4ced40f448962a9598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecc0d08843df1e4cc1e8ba5516482b4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#a1ecc0d08843df1e4cc1e8ba5516482b4">LoadGame</a> (string localGameID)</td></tr>
+<tr class="memdesc:a1ecc0d08843df1e4cc1e8ba5516482b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load game data from game file by the provided <em>localGameID</em>   <a href="class_save_system_internal_1_1_save_data_serialiser.html#a1ecc0d08843df1e4cc1e8ba5516482b4">More...</a><br /></td></tr>
 <tr class="separator:a1ecc0d08843df1e4cc1e8ba5516482b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dc42b1a155bbc56b2a5181181e23e9e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e">ValidateHash</a> (<a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> data)</td></tr>
-<tr class="memdesc:a3dc42b1a155bbc56b2a5181181e23e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates if the checksum hash based on the current data matches the one stored with this data when it was last serialised. This should remain the same if calculated on the same data and so is used to make sure file has not been altered / corrupted. This will only be meaningful just after a strucutre is deserialised from a file. <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f" title="A hash of the data of this struct (excluting the hash variable), to detect corruption in loading data...">SaveGameData.hash</a> is unaltered by this function.  <a href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e">More...</a><br /></td></tr>
-<tr class="separator:a3dc42b1a155bbc56b2a5181181e23e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ca04631621a7099266349ca1d44cb66"><td class="memItemLeft" align="right" valign="top"><a id="a7ca04631621a7099266349ca1d44cb66"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteFile</b> (string localGameID)</td></tr>
+<tr class="memitem:a7ca04631621a7099266349ca1d44cb66"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#a7ca04631621a7099266349ca1d44cb66">DeleteFile</a> (string localGameID)</td></tr>
+<tr class="memdesc:a7ca04631621a7099266349ca1d44cb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a save file with the provied <em>localGameID</em>   <a href="class_save_system_internal_1_1_save_data_serialiser.html#a7ca04631621a7099266349ca1d44cb66">More...</a><br /></td></tr>
 <tr class="separator:a7ca04631621a7099266349ca1d44cb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:adee0c3342a476ffd01492133baa4a127"><td class="memItemLeft" align="right" valign="top"><a id="adee0c3342a476ffd01492133baa4a127"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>SavePath</b><code> [get]</code></td></tr>
+<tr class="memitem:adee0c3342a476ffd01492133baa4a127"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#adee0c3342a476ffd01492133baa4a127">SavePath</a><code> [get]</code></td></tr>
+<tr class="memdesc:adee0c3342a476ffd01492133baa4a127"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path to the folder where save games are stored  <a href="class_save_system_internal_1_1_save_data_serialiser.html#adee0c3342a476ffd01492133baa4a127">More...</a><br /></td></tr>
 <tr class="separator:adee0c3342a476ffd01492133baa4a127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Static class responsible for serialising the <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serilaisable form. This is the final form of...">SaveGameData</a> data. Controlled by <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_registry_serialiser.html" title="Static class responsible for serialising the SaveGameRegistryData data. Controlled by SaveRegistryMan...">SaveGameRegistrySerialiser</a> </p>
+<div class="textblock"><p>Static class responsible for serialising the <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a> data. Controlled by <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_registry_serialiser.html" title="Static class responsible for serialising the SaveGameRegistryData data. Controlled by SaveRegistryMan...">SaveGameRegistrySerialiser</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a71a9402a9453f0497643b040f9cb2c18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71a9402a9453f0497643b040f9cb2c18">&#9670;&nbsp;</a></span>CreateNewSaveFile()</h2>
@@ -154,6 +151,42 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SavePath</b>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>If a new save file was created</dd></dl>
+
+</div>
+</div>
+<a id="a7ca04631621a7099266349ca1d44cb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ca04631621a7099266349ca1d44cb66">&#9670;&nbsp;</a></span>DeleteFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool SaveSystemInternal.SaveDataSerialiser.DeleteFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>localGameID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes a save file with the provied <em>localGameID</em>  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">localGameID</td><td>The ID of the save file to be deleted</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the file to be deleted previously existed (the deletion operation itself never fails)</dd></dl>
 
 </div>
 </div>
@@ -192,8 +225,8 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SavePath</b>
 
 </div>
 </div>
-<a id="a3dc42b1a155bbc56b2a5181181e23e9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dc42b1a155bbc56b2a5181181e23e9e">&#9670;&nbsp;</a></span>ValidateHash()</h2>
+<a id="a1ecc0d08843df1e4cc1e8ba5516482b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ecc0d08843df1e4cc1e8ba5516482b4">&#9670;&nbsp;</a></span>LoadGame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,10 +235,10 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SavePath</b>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool SaveSystemInternal.SaveDataSerialiser.ValidateHash </td>
+          <td class="memname">static <a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> SaveSystemInternal.SaveDataSerialiser.LoadGame </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a>&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>localGameID</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -216,14 +249,85 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>SavePath</b>
 </table>
 </div><div class="memdoc">
 
-<p>Validates if the checksum hash based on the current data matches the one stored with this data when it was last serialised. This should remain the same if calculated on the same data and so is used to make sure file has not been altered / corrupted. This will only be meaningful just after a strucutre is deserialised from a file. <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f" title="A hash of the data of this struct (excluting the hash variable), to detect corruption in loading data...">SaveGameData.hash</a> is unaltered by this function. </p>
+<p>Load game data from game file by the provided <em>localGameID</em>  </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>The structure to be validated</td></tr>
+    <tr><td class="paramname">localGameID</td><td>The ID of the game file to be loaded</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>If the hashes match (the data is the same and not-corrupted)</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The data from the file in a <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a> structure</dd></dl>
+
+</div>
+</div>
+<a id="aa85a801aba061d4ced40f448962a9598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85a801aba061d4ced40f448962a9598">&#9670;&nbsp;</a></span>SaveGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool SaveSystemInternal.SaveDataSerialiser.SaveGame </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>localGameID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save the data provided to the save file given by the <em>localGameID</em>  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">localGameID</td><td>&gt;The ID of the game file to be saved into</td></tr>
+    <tr><td class="paramname">data</td><td>The data to save</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the saving was sucessful</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="adee0c3342a476ffd01492133baa4a127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adee0c3342a476ffd01492133baa4a127">&#9670;&nbsp;</a></span>SavePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SaveSystemInternal.SaveDataSerialiser.SavePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The path to the folder where save games are stored </p>
 
 </div>
 </div>

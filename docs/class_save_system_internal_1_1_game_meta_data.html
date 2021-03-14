@@ -89,21 +89,35 @@ $(document).ready(function(){initNavTree('class_save_system_internal_1_1_game_me
 </div><!--header-->
 <div class="contents">
 
-<p>A Datastructure that represents a game  
+<p>A Datastructure that represents a game file, a list of these is stored on the registry file  
  <a href="class_save_system_internal_1_1_game_meta_data.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6e8359c56810df0bab8b3379f8aba61e"><td class="memItemLeft" align="right" valign="top"><a id="a6e8359c56810df0bab8b3379f8aba61e"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>gameID</b></td></tr>
+<tr class="memitem:a6e8359c56810df0bab8b3379f8aba61e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_game_meta_data.html#a6e8359c56810df0bab8b3379f8aba61e">gameID</a></td></tr>
+<tr class="memdesc:a6e8359c56810df0bab8b3379f8aba61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique ID of a game. Made up of SystemInfo.deviceUniqueIdentifier and the number of ticks given by DateTime.Now. The filepath of a game is given by passing the value of <a class="el" href="class_save_system_internal_1_1_game_meta_data.html#a6e8359c56810df0bab8b3379f8aba61e" title="The unique ID of a game. Made up of SystemInfo.deviceUniqueIdentifier and the number of ticks given b...">gameID</a> to SaveDataSerialiser.GetFilePath(string)  <a href="class_save_system_internal_1_1_game_meta_data.html#a6e8359c56810df0bab8b3379f8aba61e">More...</a><br /></td></tr>
 <tr class="separator:a6e8359c56810df0bab8b3379f8aba61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67a3780cb03e960ce3bd4935494ab48a"><td class="memItemLeft" align="right" valign="top"><a id="a67a3780cb03e960ce3bd4935494ab48a"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>gameName</b></td></tr>
-<tr class="separator:a67a3780cb03e960ce3bd4935494ab48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A Datastructure that represents a game </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>A Datastructure that represents a game file, a list of these is stored on the registry file </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6e8359c56810df0bab8b3379f8aba61e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e8359c56810df0bab8b3379f8aba61e">&#9670;&nbsp;</a></span>gameID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SaveSystemInternal.GameMetaData.gameID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The unique ID of a game. Made up of SystemInfo.deviceUniqueIdentifier and the number of ticks given by DateTime.Now. The filepath of a game is given by passing the value of <a class="el" href="class_save_system_internal_1_1_game_meta_data.html#a6e8359c56810df0bab8b3379f8aba61e" title="The unique ID of a game. Made up of SystemInfo.deviceUniqueIdentifier and the number of ticks given b...">gameID</a> to SaveDataSerialiser.GetFilePath(string) </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Data_Structures/GameMetaData.cs</li>
 </ul>
 </div><!-- contents -->

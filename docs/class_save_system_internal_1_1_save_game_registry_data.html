@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('class_save_system_internal_1_1_save_ga
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aac2f436579220e3ff41392ee9c9e73e5"><td class="memItemLeft" align="right" valign="top"><a id="aac2f436579220e3ff41392ee9c9e73e5"></a>
-<a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>games</b></td></tr>
+<tr class="memitem:aac2f436579220e3ff41392ee9c9e73e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html#aac2f436579220e3ff41392ee9c9e73e5">games</a></td></tr>
+<tr class="memdesc:aac2f436579220e3ff41392ee9c9e73e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of existing games. The filepath of a game is given by passing the value of <a class="el" href="class_save_system_internal_1_1_game_meta_data.html#a6e8359c56810df0bab8b3379f8aba61e" title="The unique ID of a game. Made up of SystemInfo.deviceUniqueIdentifier and the number of ticks given b...">GameMetaData.gameID</a> to SaveDataSerialiser.GetFilePath(string)  <a href="class_save_system_internal_1_1_save_game_registry_data.html#aac2f436579220e3ff41392ee9c9e73e5">More...</a><br /></td></tr>
 <tr class="separator:aac2f436579220e3ff41392ee9c9e73e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5b83be4971082cfbe09687545e9869b"><td class="memItemLeft" align="right" valign="top">byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html#af5b83be4971082cfbe09687545e9869b">hash</a></td></tr>
 <tr class="memdesc:af5b83be4971082cfbe09687545e9869b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A hash of the data of this struct (excluting the <a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html#af5b83be4971082cfbe09687545e9869b" title="A hash of the data of this struct (excluting the hash variable), to detect corruption in loading data">hash</a> variable), to detect corruption in loading data  <a href="class_save_system_internal_1_1_save_game_registry_data.html#af5b83be4971082cfbe09687545e9869b">More...</a><br /></td></tr>
@@ -105,12 +105,28 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:acb8b86d87b5547423f9c8be92d561d99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html#acb8b86d87b5547423f9c8be92d561d99">HashIsValid</a><code> [get]</code></td></tr>
-<tr class="memdesc:acb8b86d87b5547423f9c8be92d561d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e" title="Validates if the checksum hash based on the current data matches the one stored with this data when i...">SaveSystemInternal.SaveDataSerialiser.ValidateHash</a> to compare the data to it's hash  <a href="class_save_system_internal_1_1_save_game_registry_data.html#acb8b86d87b5547423f9c8be92d561d99">More...</a><br /></td></tr>
+<tr class="memdesc:acb8b86d87b5547423f9c8be92d561d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="class_save_system_internal_1_1_save_data_utility.html#a0596c7c1a643dc7a3af02865bbfb16e4" title="Overload for SaveGameRegistryData. Validates if the checksum hash based on the current data matches t...">SaveDataUtility.ValidateHash(SaveGameRegistryData)</a> to compare the data to it's hash  <a href="class_save_system_internal_1_1_save_game_registry_data.html#acb8b86d87b5547423f9c8be92d561d99">More...</a><br /></td></tr>
 <tr class="separator:acb8b86d87b5547423f9c8be92d561d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Datastructure representing the game registry file, the file that holds the names of all active games so they can be found by filepath </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="aac2f436579220e3ff41392ee9c9e73e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac2f436579220e3ff41392ee9c9e73e5">&#9670;&nbsp;</a></span>games</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a> [] SaveSystemInternal.SaveGameRegistryData.games</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The list of existing games. The filepath of a game is given by passing the value of <a class="el" href="class_save_system_internal_1_1_game_meta_data.html#a6e8359c56810df0bab8b3379f8aba61e" title="The unique ID of a game. Made up of SystemInfo.deviceUniqueIdentifier and the number of ticks given b...">GameMetaData.gameID</a> to SaveDataSerialiser.GetFilePath(string) </p>
+
+</div>
+</div>
 <a id="af5b83be4971082cfbe09687545e9869b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5b83be4971082cfbe09687545e9869b">&#9670;&nbsp;</a></span>hash</h2>
 
@@ -148,7 +164,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Calls <a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e" title="Validates if the checksum hash based on the current data matches the one stored with this data when i...">SaveSystemInternal.SaveDataSerialiser.ValidateHash</a> to compare the data to it's hash </p>
+<p>Calls <a class="el" href="class_save_system_internal_1_1_save_data_utility.html#a0596c7c1a643dc7a3af02865bbfb16e4" title="Overload for SaveGameRegistryData. Validates if the checksum hash based on the current data matches t...">SaveDataUtility.ValidateHash(SaveGameRegistryData)</a> to compare the data to it's hash </p>
 
 </div>
 </div>

@@ -89,20 +89,32 @@ $(document).ready(function(){initNavTree('class_save_system_internal_1_1_save_da
 </div><!--header-->
 <div class="contents">
 
-<p>Static class of helper functions for manipulating the usable <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> and the serialisable <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serilaisable form. This is the final form of...">SaveGameData</a>  
+<p>Static class of helper functions for manipulating the usable <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> and the serialisable <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a>  
  <a href="class_save_system_internal_1_1_save_data_utility.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac756041fc0628f2cf357f241db41d756"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_utility.html#ac756041fc0628f2cf357f241db41d756">GetSerialisableSaveGameStruct</a> (<a class="el" href="class_live_game_data.html">LiveGameData</a> liveData)</td></tr>
-<tr class="memdesc:ac756041fc0628f2cf357f241db41d756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a deep copy of the usable <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> in the serialisable form of <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serilaisable form. This is the final form of...">SaveGameData</a>  <a href="class_save_system_internal_1_1_save_data_utility.html#ac756041fc0628f2cf357f241db41d756">More...</a><br /></td></tr>
+<tr class="memdesc:ac756041fc0628f2cf357f241db41d756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a deep copy of the usable <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> in the serialisable form of <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a>  <a href="class_save_system_internal_1_1_save_data_utility.html#ac756041fc0628f2cf357f241db41d756">More...</a><br /></td></tr>
 <tr class="separator:ac756041fc0628f2cf357f241db41d756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43d6cda5d6101d4998ab5a2e46197ede"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_live_game_data.html">LiveGameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_utility.html#a43d6cda5d6101d4998ab5a2e46197ede">GetUsableLiveGameStruct</a> (<a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> saveData)</td></tr>
-<tr class="memdesc:a43d6cda5d6101d4998ab5a2e46197ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a deep copy of the serialisable of <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serilaisable form. This is the final form of...">SaveGameData</a> in the usable form of <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a>  <a href="class_save_system_internal_1_1_save_data_utility.html#a43d6cda5d6101d4998ab5a2e46197ede">More...</a><br /></td></tr>
+<tr class="memdesc:a43d6cda5d6101d4998ab5a2e46197ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a deep copy of the serialisable of <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a> in the usable form of <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a>  <a href="class_save_system_internal_1_1_save_data_utility.html#a43d6cda5d6101d4998ab5a2e46197ede">More...</a><br /></td></tr>
 <tr class="separator:a43d6cda5d6101d4998ab5a2e46197ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe95d82c933a6e9bac147f8696bf3fd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_utility.html#a5fe95d82c933a6e9bac147f8696bf3fd">ValidateHash</a> (<a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> data)</td></tr>
+<tr class="memdesc:a5fe95d82c933a6e9bac147f8696bf3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates if the checksum hash based on the current data matches the one stored with this data when it was last serialised. This should remain the same if calculated on the same data and so is used to make sure file has not been altered / corrupted. This will only be meaningful just after a strucutre is deserialised from a file. <em>data</em> 's <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f" title="A hash of the data of this struct (excluting the hash variable), to detect corruption in loading data...">SaveGameData.hash</a> is unaltered by this function.  <a href="class_save_system_internal_1_1_save_data_utility.html#a5fe95d82c933a6e9bac147f8696bf3fd">More...</a><br /></td></tr>
+<tr class="separator:a5fe95d82c933a6e9bac147f8696bf3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0596c7c1a643dc7a3af02865bbfb16e4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_utility.html#a0596c7c1a643dc7a3af02865bbfb16e4">ValidateHash</a> (<a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html">SaveGameRegistryData</a> data)</td></tr>
+<tr class="memdesc:a0596c7c1a643dc7a3af02865bbfb16e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload for <a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html" title="Datastructure representing the game registry file, the file that holds the names of all active games ...">SaveGameRegistryData</a>. Validates if the checksum hash based on the current data matches the one stored with this data when it was last serialised. This should remain the same if calculated on the same data and so is used to make sure file has not been altered / corrupted. This will only be meaningful just after a strucutre is deserialised from a file. <em>data</em> 's <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f" title="A hash of the data of this struct (excluting the hash variable), to detect corruption in loading data...">SaveGameData.hash</a> is unaltered by this function.  <a href="class_save_system_internal_1_1_save_data_utility.html#a0596c7c1a643dc7a3af02865bbfb16e4">More...</a><br /></td></tr>
+<tr class="separator:a0596c7c1a643dc7a3af02865bbfb16e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb74b8cf2c0ae53c72a05d5833f309b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_utility.html#a7fb74b8cf2c0ae53c72a05d5833f309b">SetHash</a> (<a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a> data)</td></tr>
+<tr class="memdesc:a7fb74b8cf2c0ae53c72a05d5833f309b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a checksum hash based on the current data, this should remain the same if calculated on the same data, and so can be used to make sure file has not been altered / corrupted  <a href="class_save_system_internal_1_1_save_data_utility.html#a7fb74b8cf2c0ae53c72a05d5833f309b">More...</a><br /></td></tr>
+<tr class="separator:a7fb74b8cf2c0ae53c72a05d5833f309b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04795f7842fb95c1c1f091ed1545b3d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_utility.html#ab04795f7842fb95c1c1f091ed1545b3d">SetHash</a> (<a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html">SaveGameRegistryData</a> data)</td></tr>
+<tr class="memdesc:ab04795f7842fb95c1c1f091ed1545b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload for <a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html" title="Datastructure representing the game registry file, the file that holds the names of all active games ...">SaveGameRegistryData</a>. Set a checksum hash based on the current data, this should remain the same if calculated on the same data, and so can be used to make sure file has not been altered  <a href="class_save_system_internal_1_1_save_data_utility.html#ab04795f7842fb95c1c1f091ed1545b3d">More...</a><br /></td></tr>
+<tr class="separator:ab04795f7842fb95c1c1f091ed1545b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Static class of helper functions for manipulating the usable <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> and the serialisable <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serilaisable form. This is the final form of...">SaveGameData</a> </p>
+<div class="textblock"><p>Static class of helper functions for manipulating the usable <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> and the serialisable <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac756041fc0628f2cf357f241db41d756"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac756041fc0628f2cf357f241db41d756">&#9670;&nbsp;</a></span>GetSerialisableSaveGameStruct()</h2>
@@ -128,7 +140,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a deep copy of the usable <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> in the serialisable form of <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serilaisable form. This is the final form of...">SaveGameData</a> </p>
+<p>Returns a deep copy of the usable <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> in the serialisable form of <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">liveData</td><td>The data from the currently active game to be transformed into a serialisable format</td></tr>
@@ -163,7 +175,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a deep copy of the serialisable of <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serilaisable form. This is the final form of...">SaveGameData</a> in the usable form of <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> </p>
+<p>Returns a deep copy of the serialisable of <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a> in the usable form of <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">saveData</td><td>The data from a just opened file to be transformed into a usable format</td></tr>
@@ -171,6 +183,132 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new strutcure which can be read into the game</dd></dl>
+
+</div>
+</div>
+<a id="a7fb74b8cf2c0ae53c72a05d5833f309b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb74b8cf2c0ae53c72a05d5833f309b">&#9670;&nbsp;</a></span>SetHash() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SaveSystemInternal.SaveDataUtility.SetHash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a checksum hash based on the current data, this should remain the same if calculated on the same data, and so can be used to make sure file has not been altered / corrupted </p>
+
+</div>
+</div>
+<a id="ab04795f7842fb95c1c1f091ed1545b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04795f7842fb95c1c1f091ed1545b3d">&#9670;&nbsp;</a></span>SetHash() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SaveSystemInternal.SaveDataUtility.SetHash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html">SaveGameRegistryData</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overload for <a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html" title="Datastructure representing the game registry file, the file that holds the names of all active games ...">SaveGameRegistryData</a>. Set a checksum hash based on the current data, this should remain the same if calculated on the same data, and so can be used to make sure file has not been altered </p>
+
+</div>
+</div>
+<a id="a5fe95d82c933a6e9bac147f8696bf3fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe95d82c933a6e9bac147f8696bf3fd">&#9670;&nbsp;</a></span>ValidateHash() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool SaveSystemInternal.SaveDataUtility.ValidateHash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_system_internal_1_1_save_game_data.html">SaveGameData</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Validates if the checksum hash based on the current data matches the one stored with this data when it was last serialised. This should remain the same if calculated on the same data and so is used to make sure file has not been altered / corrupted. This will only be meaningful just after a strucutre is deserialised from a file. <em>data</em> 's <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f" title="A hash of the data of this struct (excluting the hash variable), to detect corruption in loading data...">SaveGameData.hash</a> is unaltered by this function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The structure to be validated</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the hashes match (the data is the same and not-corrupted)</dd></dl>
+
+</div>
+</div>
+<a id="a0596c7c1a643dc7a3af02865bbfb16e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0596c7c1a643dc7a3af02865bbfb16e4">&#9670;&nbsp;</a></span>ValidateHash() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool SaveSystemInternal.SaveDataUtility.ValidateHash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html">SaveGameRegistryData</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overload for <a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html" title="Datastructure representing the game registry file, the file that holds the names of all active games ...">SaveGameRegistryData</a>. Validates if the checksum hash based on the current data matches the one stored with this data when it was last serialised. This should remain the same if calculated on the same data and so is used to make sure file has not been altered / corrupted. This will only be meaningful just after a strucutre is deserialised from a file. <em>data</em> 's <a class="el" href="class_save_system_internal_1_1_save_game_data.html#a4363c9203cf0e5dcfdbfa5eb66afce1f" title="A hash of the data of this struct (excluting the hash variable), to detect corruption in loading data...">SaveGameData.hash</a> is unaltered by this function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The structure to be validated</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the hashes match (the data is the same and not-corrupted)</dd></dl>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['validatehash_88',['ValidateHash',['../class_save_system_internal_1_1_save_data_serialiser.html#a3dc42b1a155bbc56b2a5181181e23e9e',1,'SaveSystemInternal.SaveDataSerialiser.ValidateHash()'],['../class_save_system_internal_1_1_save_game_registry_serialiser.html#a30660f7df25fef4af60d5acc16e3f781',1,'SaveSystemInternal.SaveGameRegistrySerialiser.ValidateHash()']]]
+  ['validatehash_104',['ValidateHash',['../class_save_system_internal_1_1_save_data_utility.html#a5fe95d82c933a6e9bac147f8696bf3fd',1,'SaveSystemInternal.SaveDataUtility.ValidateHash(SaveGameData data)'],['../class_save_system_internal_1_1_save_data_utility.html#a0596c7c1a643dc7a3af02865bbfb16e4',1,'SaveSystemInternal.SaveDataUtility.ValidateHash(SaveGameRegistryData data)']]]
 ];
