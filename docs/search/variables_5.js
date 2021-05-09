@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['p1actionpoints_112',['p1actionPoints',['../class_save_system_internal_1_1_save_game_data.html#a5e6d86216cdc3599e7d2f023fc15342f',1,'SaveSystemInternal::SaveGameData']]],
-  ['p1gardengoals_113',['p1gardenGoals',['../class_save_system_internal_1_1_save_game_data.html#a35b2f858eec8cc801d459fd48b06cf88',1,'SaveSystemInternal::SaveGameData']]],
-  ['p2actionpoints_114',['p2actionPoints',['../class_save_system_internal_1_1_save_game_data.html#ab2d9d724cfbb2fbe0b51c527b5a6e46c',1,'SaveSystemInternal::SaveGameData']]],
-  ['p2gardengoals_115',['p2gardenGoals',['../class_save_system_internal_1_1_save_game_data.html#a3f1a005086004ee0115915f815506650',1,'SaveSystemInternal::SaveGameData']]],
-  ['plantnametype_116',['plantNameType',['../class_save_system_internal_1_1_serialised_plant_data.html#a0be85432498436007afec59d58424ace',1,'SaveSystemInternal::SerialisedPlantData']]],
-  ['plants_117',['plants',['../class_live_game_data.html#a5af941ecaf78ce8059e6582e51293723',1,'LiveGameData.plants()'],['../class_save_system_internal_1_1_save_game_data.html#a603288d9767f6008f8dee56e36c518ba',1,'SaveSystemInternal.SaveGameData.plants()']]],
-  ['plantstoadd_118',['plantsToAdd',['../class_live_game_data.html#a8f98d8149c9fc9fbea996482f4e365d0',1,'LiveGameData']]],
-  ['position_119',['position',['../class_save_system_internal_1_1_serialised_plant_data.html#a5eb9271e19dbbaa84c022d9dabd9d347',1,'SaveSystemInternal::SerialisedPlantData']]]
+  ['onfailure_321',['OnFailure',['../class_net_system_1_1_a_p_i_operation_callbacks.html#adfc0815c46afc2f10410892647cafa4a',1,'NetSystem::APIOperationCallbacks']]],
+  ['onsucess_322',['OnSucess',['../class_net_system_1_1_a_p_i_operation_callbacks.html#ab721ce04dd351445021521540b1f99b1',1,'NetSystem.APIOperationCallbacks.OnSucess()'],['../class_net_system_1_1_a_p_i_operation_callbacks.html#a4b12712babf3b26f4402b531a164de38',1,'NetSystem.APIOperationCallbacks.OnSucess()']]],
+  ['owner_323',['owner',['../class_save_system_internal_1_1_serialised_plant_data.html#a962d1dffb99b660f6856ff2adf90bed3',1,'SaveSystemInternal::SerialisedPlantData']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['opengamedata_126',['OpenGameData',['../class_save_system_internal_1_1_save_game_manager.html#ab403c2455289d6b6ce59a6bf555f0635',1,'SaveSystemInternal::SaveGameManager']]],
-  ['opengamemetadata_127',['OpenGameMetaData',['../class_save_system_internal_1_1_save_game_manager.html#ae37b30856b7d66219b52562f3f57fce9',1,'SaveSystemInternal::SaveGameManager']]]
+  ['hashisvalid_355',['HashIsValid',['../class_save_system_internal_1_1_save_game_data.html#ab25dcd16387fbbd950fff3dbaf8d7807',1,'SaveSystemInternal.SaveGameData.HashIsValid()'],['../class_save_system_internal_1_1_save_game_registry_data.html#acb8b86d87b5547423f9c8be92d561d99',1,'SaveSystemInternal.SaveGameRegistryData.HashIsValid()']]]
 ];

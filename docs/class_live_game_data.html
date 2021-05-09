@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Budding Up: LiveGameData Class Reference</title>
+<title>Budding up: LiveGameData Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Budding Up
+   <div id="projectname">Budding up
+   &#160;<span id="projectnumber">1.2.1-beta</span>
    </div>
   </td>
  </tr>
@@ -81,10 +82,6 @@ $(document).ready(function(){initNavTree('class_live_game_data.html',''); initRe
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="class_live_game_data-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">LiveGameData Class Reference</div>  </div>
 </div><!--header-->
@@ -92,184 +89,10 @@ $(document).ready(function(){initNavTree('class_live_game_data.html',''); initRe
 
 <p>A datastruct to more easily store the state of a game, which will not be serialised directly. Will be converted into <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveSystemInternal.SaveGameData</a> before being saved to file  
  <a href="class_live_game_data.html#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af7feb237b480971dafa3b8a5c0a7bd56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_game_data.html#af7feb237b480971dafa3b8a5c0a7bd56">LiveGameData</a> ()</td></tr>
-<tr class="memdesc:af7feb237b480971dafa3b8a5c0a7bd56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default empty constructor  <a href="class_live_game_data.html#af7feb237b480971dafa3b8a5c0a7bd56">More...</a><br /></td></tr>
-<tr class="separator:af7feb237b480971dafa3b8a5c0a7bd56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724b13fc88e1cf22edec3ede85c72114"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_game_data.html#a724b13fc88e1cf22edec3ede85c72114">LiveGameData</a> (<a class="el" href="class_save_system_internal_1_1_serialised_plant_data.html">SerialisedPlantData</a>[] plantDataFromSaveFile)</td></tr>
-<tr class="memdesc:a724b13fc88e1cf22edec3ede85c72114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for creating this object from a save file  <a href="class_live_game_data.html#a724b13fc88e1cf22edec3ede85c72114">More...</a><br /></td></tr>
-<tr class="separator:a724b13fc88e1cf22edec3ede85c72114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:acf107fed4835b0d0e174518514378e7e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_game_data.html#acf107fed4835b0d0e174518514378e7e">gameID</a></td></tr>
-<tr class="memdesc:acf107fed4835b0d0e174518514378e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of a game, set here so the associated GameMetaData structure can be recovered if lost  <a href="class_live_game_data.html#acf107fed4835b0d0e174518514378e7e">More...</a><br /></td></tr>
-<tr class="separator:acf107fed4835b0d0e174518514378e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac65849e012c299f7f8661bae4af70774"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; Player.PlayerEnum, MoodAtributes &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_game_data.html#ac65849e012c299f7f8661bae4af70774">gardenGoals</a></td></tr>
-<tr class="memdesc:ac65849e012c299f7f8661bae4af70774"><td class="mdescLeft">&#160;</td><td class="mdescRight">The goals of the garden. Stored by Player.PlayerEnum and MoodAtributes  <a href="class_live_game_data.html#ac65849e012c299f7f8661bae4af70774">More...</a><br /></td></tr>
-<tr class="separator:ac65849e012c299f7f8661bae4af70774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3fb462ab34e67b179334a7ddccb14b"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; Player.PlayerEnum, Dictionary&lt; TurnPoints.PointType, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_game_data.html#a1f3fb462ab34e67b179334a7ddccb14b">actionPoints</a></td></tr>
-<tr class="memdesc:a1f3fb462ab34e67b179334a7ddccb14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current number of points that each player has left to perform this turn. Stored by Player.PlayerEnum and TurnPoints.PointType  <a href="class_live_game_data.html#a1f3fb462ab34e67b179334a7ddccb14b">More...</a><br /></td></tr>
-<tr class="separator:a1f3fb462ab34e67b179334a7ddccb14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5af941ecaf78ce8059e6582e51293723"><td class="memItemLeft" align="right" valign="top">List&lt; PlantItem &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_game_data.html#a5af941ecaf78ce8059e6582e51293723">plants</a></td></tr>
-<tr class="memdesc:a5af941ecaf78ce8059e6582e51293723"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all of the plants in the game  <a href="class_live_game_data.html#a5af941ecaf78ce8059e6582e51293723">More...</a><br /></td></tr>
-<tr class="separator:a5af941ecaf78ce8059e6582e51293723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f98d8149c9fc9fbea996482f4e365d0"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_save_system_internal_1_1_serialised_plant_data.html">SerialisedPlantData</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_game_data.html#a8f98d8149c9fc9fbea996482f4e365d0">plantsToAdd</a></td></tr>
-<tr class="memdesc:a8f98d8149c9fc9fbea996482f4e365d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a game is loaded, the data about the plants will be added to this array. The plants will need to be instatniated properly  <a href="class_live_game_data.html#a8f98d8149c9fc9fbea996482f4e365d0">More...</a><br /></td></tr>
-<tr class="separator:a8f98d8149c9fc9fbea996482f4e365d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae26c84f6fdc41eac0419bd8df7262206"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_live_game_data.html#ae26c84f6fdc41eac0419bd8df7262206">turnNumber</a></td></tr>
-<tr class="memdesc:ae26c84f6fdc41eac0419bd8df7262206"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current turn number. Who's turn it is can be calculated from this information  <a href="class_live_game_data.html#ae26c84f6fdc41eac0419bd8df7262206">More...</a><br /></td></tr>
-<tr class="separator:ae26c84f6fdc41eac0419bd8df7262206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A datastruct to more easily store the state of a game, which will not be serialised directly. Will be converted into <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveSystemInternal.SaveGameData</a> before being saved to file </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af7feb237b480971dafa3b8a5c0a7bd56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7feb237b480971dafa3b8a5c0a7bd56">&#9670;&nbsp;</a></span>LiveGameData() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">LiveGameData.LiveGameData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default empty constructor </p>
-
-</div>
-</div>
-<a id="a724b13fc88e1cf22edec3ede85c72114"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a724b13fc88e1cf22edec3ede85c72114">&#9670;&nbsp;</a></span>LiveGameData() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">LiveGameData.LiveGameData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_save_system_internal_1_1_serialised_plant_data.html">SerialisedPlantData</a>[]&#160;</td>
-          <td class="paramname"><em>plantDataFromSaveFile</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructor for creating this object from a save file </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">plantDataFromSaveFile</td><td>The list of plants that will need to be added to the game</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1f3fb462ab34e67b179334a7ddccb14b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3fb462ab34e67b179334a7ddccb14b">&#9670;&nbsp;</a></span>actionPoints</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dictionary&lt;Player.PlayerEnum, Dictionary&lt;TurnPoints.PointType,int&gt; &gt; LiveGameData.actionPoints</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The current number of points that each player has left to perform this turn. Stored by Player.PlayerEnum and TurnPoints.PointType </p>
-
-</div>
-</div>
-<a id="acf107fed4835b0d0e174518514378e7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf107fed4835b0d0e174518514378e7e">&#9670;&nbsp;</a></span>gameID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string LiveGameData.gameID</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The ID of a game, set here so the associated GameMetaData structure can be recovered if lost </p>
-
-</div>
-</div>
-<a id="ac65849e012c299f7f8661bae4af70774"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac65849e012c299f7f8661bae4af70774">&#9670;&nbsp;</a></span>gardenGoals</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dictionary&lt;Player.PlayerEnum, MoodAtributes&gt; LiveGameData.gardenGoals</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The goals of the garden. Stored by Player.PlayerEnum and MoodAtributes </p>
-
-</div>
-</div>
-<a id="a5af941ecaf78ce8059e6582e51293723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5af941ecaf78ce8059e6582e51293723">&#9670;&nbsp;</a></span>plants</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;PlantItem&gt; LiveGameData.plants</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>List of all of the plants in the game </p>
-
-</div>
-</div>
-<a id="a8f98d8149c9fc9fbea996482f4e365d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f98d8149c9fc9fbea996482f4e365d0">&#9670;&nbsp;</a></span>plantsToAdd</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">readonly <a class="el" href="class_save_system_internal_1_1_serialised_plant_data.html">SerialisedPlantData</a> [] LiveGameData.plantsToAdd</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>When a game is loaded, the data about the plants will be added to this array. The plants will need to be instatniated properly </p>
-
-</div>
-</div>
-<a id="ae26c84f6fdc41eac0419bd8df7262206"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae26c84f6fdc41eac0419bd8df7262206">&#9670;&nbsp;</a></span>turnNumber</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int LiveGameData.turnNumber</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The current turn number. Who's turn it is can be calculated from this information </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>Data_Structures/LiveGameData.cs</li>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>C:/Users/Jay/Documents/Working/Uni/this-Pigeon-game/Assets/Scripts/Save_System/Data_Structures/LiveGameData.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

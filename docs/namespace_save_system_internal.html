@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Budding Up: SaveSystemInternal Namespace Reference</title>
+<title>Budding up: SaveSystemInternal Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Budding Up
+   <div id="projectname">Budding up
+   &#160;<span id="projectnumber">1.2.1-beta</span>
    </div>
   </td>
  </tr>
@@ -90,9 +91,6 @@ $(document).ready(function(){initNavTree('namespace_save_system_internal.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_utility.html">SaveDataUtility</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static class of helper functions for manipulating the usable <a class="el" href="class_live_game_data.html" title="A datastruct to more easily store the state of a game, which will not be serialised directly....">LiveGameData</a> and the serialisable <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a>  <a href="class_save_system_internal_1_1_save_data_utility.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_game_meta_data.html">GameMetaData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Datastructure that represents a game file, a list of these is stored on the registry file  <a href="class_save_system_internal_1_1_game_meta_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,16 +104,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Datastructure representing the game registry file, the file that holds the names of all active games so they can be found by filepath  <a href="class_save_system_internal_1_1_save_game_registry_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_manager.html">SaveGameManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class which handles the saveing ig game files. Controlls <a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html" title="Static class responsible for serialising the SaveGameData data. Controlled by SaveGameManager....">SaveDataSerialiser</a>. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveSystemInternal....">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html" title="Class which handles the save registry file, responsible for storing metadata about saved games includ...">SaveRegistryManager</a>  <a href="class_save_system_internal_1_1_save_game_manager.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManager. See also <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html" title="Class which handles the save registry file, responsible for storing metadata about saved games includ...">SaveRegistryManager</a>  <a href="class_save_system_internal_1_1_save_game_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_registry_manager.html">SaveRegistryManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class which handles the save registry file, responsible for storing metadata about saved games including thier ID and filepath. Controlls <a class="el" href="class_save_system_internal_1_1_save_game_registry_serialiser.html" title="Static class responsible for serialising the SaveGameRegistryData data. Controlled by SaveRegistryMan...">SaveGameRegistrySerialiser</a>. Controlled by <a class="el" href="class_save_manager.html" title="Layer of abstraction between the game data and the data sent to files. Manages SaveSystemInternal....">SaveManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a>  <a href="class_save_system_internal_1_1_save_registry_manager.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html">SaveDataSerialiser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static class responsible for serialising the <a class="el" href="class_save_system_internal_1_1_save_game_data.html" title="Datastructure for holding the full data from a game in a serialisable form. This is the final form of...">SaveGameData</a> data. Controlled by <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_game_registry_serialiser.html" title="Static class responsible for serialising the SaveGameRegistryData data. Controlled by SaveRegistryMan...">SaveGameRegistrySerialiser</a>  <a href="class_save_system_internal_1_1_save_data_serialiser.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_system_internal_1_1_save_game_registry_serialiser.html">SaveGameRegistrySerialiser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static class responsible for serialising the <a class="el" href="class_save_system_internal_1_1_save_game_registry_data.html" title="Datastructure representing the game registry file, the file that holds the names of all active games ...">SaveGameRegistryData</a> data. Controlled by <a class="el" href="class_save_system_internal_1_1_save_registry_manager.html" title="Class which handles the save registry file, responsible for storing metadata about saved games includ...">SaveRegistryManager</a>. See also <a class="el" href="class_save_system_internal_1_1_save_data_serialiser.html" title="Static class responsible for serialising the SaveGameData data. Controlled by SaveGameManager....">SaveDataSerialiser</a>  <a href="class_save_system_internal_1_1_save_game_registry_serialiser.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class which handles the save registry file, responsible for storing metadata about saved games including thier ID and filepath. Controlls SaveGameRegistrySerialiser. Controlled by SaveManager. See also <a class="el" href="class_save_system_internal_1_1_save_game_manager.html" title="Class which handles the saveing ig game files. Controlls SaveDataSerialiser. Controlled by SaveManage...">SaveGameManager</a>  <a href="class_save_system_internal_1_1_save_registry_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

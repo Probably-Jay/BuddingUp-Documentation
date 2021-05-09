@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['livegamedata_66',['LiveGameData',['../class_live_game_data.html',1,'']]]
+  ['activegame_186',['ActiveGame',['../class_net_system_1_1_active_game.html',1,'NetSystem']]],
+  ['apioperationcallbacks_187',['APIOperationCallbacks',['../class_net_system_1_1_a_p_i_operation_callbacks.html',1,'NetSystem']]]
 ];

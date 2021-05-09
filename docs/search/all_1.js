@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['cleanregistryfile_2',['CleanRegistryFile',['../class_save_manager.html#a8eb8300d95db16a4b3260f1503d16a3a',1,'SaveManager']]],
-  ['closegame_3',['CloseGame',['../class_save_manager.html#aee104dbf22d76f5006d25b5547425e99',1,'SaveManager.CloseGame()'],['../class_save_system_internal_1_1_save_game_manager.html#add10599b235fcb88c40fb4180c7e9612',1,'SaveSystemInternal.SaveGameManager.CloseGame()']]],
-  ['createnewgame_4',['CreateNewGame',['../class_save_manager.html#a37faa96bca997322edd01e9a8c49f77a',1,'SaveManager']]],
-  ['createnewsavefile_5',['CreateNewSaveFile',['../class_save_system_internal_1_1_save_game_manager.html#a384a9c67f9039a1adb03ab303fa7e8f4',1,'SaveSystemInternal.SaveGameManager.CreateNewSaveFile()'],['../class_save_system_internal_1_1_save_data_serialiser.html#a71a9402a9453f0497643b040f9cb2c18',1,'SaveSystemInternal.SaveDataSerialiser.CreateNewSaveFile()']]],
-  ['createregistryfile_6',['CreateRegistryFile',['../class_save_system_internal_1_1_save_registry_manager.html#a69e7aa5547b8d37516cb7c56313a2ca3',1,'SaveSystemInternal.SaveRegistryManager.CreateRegistryFile()'],['../class_save_system_internal_1_1_save_game_registry_serialiser.html#a92206d81eb442ccd68c6ffe8f6b409a0',1,'SaveSystemInternal.SaveGameRegistrySerialiser.CreateRegistryFile()']]],
-  ['currentlyopengame_7',['CurrentlyOpenGame',['../class_save_manager.html#acc6c6beb5b3d00775c7c557ce1acc1a8',1,'SaveManager']]]
+  ['activegame_1',['ActiveGame',['../class_net_system_1_1_active_game.html',1,'NetSystem']]],
+  ['addnewgame_2',['AddNewGame',['../class_save_system_internal_1_1_save_registry_manager.html#addf864592762399afa4f5b1abbdbf16a',1,'SaveSystemInternal::SaveRegistryManager']]],
+  ['anonymouslogin_3',['AnonymousLogin',['../class_net_system_1_1_player_client.html#ad49e08b49e0a2066b7b4f8c7a5ec210d',1,'NetSystem::PlayerClient']]],
+  ['apioperationcallbacks_4',['APIOperationCallbacks',['../class_net_system_1_1_a_p_i_operation_callbacks.html#a59388d6a1e81f960e0dc2b6499551010',1,'NetSystem.APIOperationCallbacks.APIOperationCallbacks(Action onSucess, Action&lt; FailureReason &gt; onfailure)'],['../class_net_system_1_1_a_p_i_operation_callbacks.html#af9a3f1bb94588ec0f26775c179b8df3e',1,'NetSystem.APIOperationCallbacks.APIOperationCallbacks(Action&lt; Ts &gt; onSucess, Action&lt; FailureReason &gt; onfailure)'],['../class_net_system_1_1_a_p_i_operation_callbacks.html',1,'NetSystem.APIOperationCallbacks&lt; Ts &gt;']]],
+  ['assertinstanceexists_5',['AssertInstanceExists',['../class_singleton.html#aa0682547b3b75580dcc757d0f2e30548',1,'Singleton']]],
+  ['attributevalues_6',['AttributeValues',['../class_mood_attributes.html#afde12a60d6490b65b79368d0a6f482d1',1,'MoodAttributes']]],
+  ['audio_7',['Audio',['../namespace_audio.html',1,'']]]
 ];

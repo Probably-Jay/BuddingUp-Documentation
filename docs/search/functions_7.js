@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['removedeletedgame_98',['RemoveDeletedGame',['../class_save_system_internal_1_1_save_registry_manager.html#ac5466a8923ac28275cc1eec975b75003',1,'SaveSystemInternal.SaveRegistryManager.RemoveDeletedGame(string gameID)'],['../class_save_system_internal_1_1_save_registry_manager.html#a7b235e3dd1649ba721131b7bec56e71c',1,'SaveSystemInternal.SaveRegistryManager.RemoveDeletedGame(GameMetaData game)']]]
+  ['joinopengamegroup_288',['JoinOpenGameGroup',['../class_net_system_1_1_active_game.html#a9610ff56be9a77ad9ac2a96bd4646c87',1,'NetSystem::ActiveGame']]]
 ];

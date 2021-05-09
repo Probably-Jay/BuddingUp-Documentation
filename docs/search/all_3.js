@@ -1,14 +1,20 @@
 var searchData=
 [
-  ['gamedata_10',['GameData',['../class_save_manager.html#a57e2f1d0bb5525b8ef9bd8a7e74ecaad',1,'SaveManager']]],
-  ['gameexists_11',['GameExists',['../class_save_system_internal_1_1_save_game_manager.html#a97fadf4da0ebf7a341225911e6ad2bee',1,'SaveSystemInternal.SaveGameManager.GameExists()'],['../class_save_system_internal_1_1_save_data_serialiser.html#ae86659fa4ad2e01c2c5c374307c6afcd',1,'SaveSystemInternal.SaveDataSerialiser.GameExists()']]],
-  ['gameid_12',['gameID',['../class_save_system_internal_1_1_game_meta_data.html#a6e8359c56810df0bab8b3379f8aba61e',1,'SaveSystemInternal.GameMetaData.gameID()'],['../class_live_game_data.html#acf107fed4835b0d0e174518514378e7e',1,'LiveGameData.gameID()']]],
-  ['gamemetadata_13',['GameMetaData',['../class_save_system_internal_1_1_game_meta_data.html',1,'SaveSystemInternal']]],
-  ['gameopen_14',['GameOpen',['../class_save_manager.html#adba49646b1831f8b23f72689764183f4',1,'SaveManager.GameOpen()'],['../class_save_system_internal_1_1_save_game_manager.html#a6c4e709ab76f690300efc30862e1bb9d',1,'SaveSystemInternal.SaveGameManager.GameOpen()']]],
-  ['games_15',['games',['../class_save_system_internal_1_1_save_game_registry_data.html#aac2f436579220e3ff41392ee9c9e73e5',1,'SaveSystemInternal::SaveGameRegistryData']]],
-  ['gardengoals_16',['gardenGoals',['../class_live_game_data.html#ac65849e012c299f7f8661bae4af70774',1,'LiveGameData']]],
-  ['getallstoredgames_17',['GetAllStoredGames',['../class_save_manager.html#a0402e5104065906809d9774108b76692',1,'SaveManager.GetAllStoredGames()'],['../class_save_system_internal_1_1_save_registry_manager.html#adda7145d08895feb190344049908cb00',1,'SaveSystemInternal.SaveRegistryManager.GetAllStoredGames()']]],
-  ['getgame_18',['GetGame',['../class_save_system_internal_1_1_save_registry_manager.html#a84849ae7ff1f09e307f12147f02d5f39',1,'SaveSystemInternal::SaveRegistryManager']]],
-  ['getserialisablesavegamestruct_19',['GetSerialisableSaveGameStruct',['../class_save_system_internal_1_1_save_data_utility.html#ac756041fc0628f2cf357f241db41d756',1,'SaveSystemInternal::SaveDataUtility']]],
-  ['getusablelivegamestruct_20',['GetUsableLiveGameStruct',['../class_save_system_internal_1_1_save_data_utility.html#a43d6cda5d6101d4998ab5a2e46197ede',1,'SaveSystemInternal::SaveDataUtility']]]
+  ['callresponse_9',['CallResponse',['../class_net_system_1_1_call_response.html#a5977c8634dd123967131ec617ebe9b26',1,'NetSystem.CallResponse.CallResponse()'],['../class_net_system_1_1_call_response.html#a5977c8634dd123967131ec617ebe9b26',1,'NetSystem.CallResponse.CallResponse()'],['../class_net_system_1_1_call_response.html#a4f45ce6a4ba70fc15b6c9d92ce12d1b6',1,'NetSystem.CallResponse.CallResponse(T data)'],['../class_net_system_1_1_call_response.html',1,'NetSystem.CallResponse&lt; T &gt;']]],
+  ['callstatus_10',['CallStatus',['../class_net_system_1_1_call_response_1_1_call_status.html',1,'NetSystem::CallResponse']]],
+  ['canclaimturn_11',['CanClaimTurn',['../class_game_core_1_1_online_turn_tracker.html#add7d8e5f6f50902d867f003c8cae9593',1,'GameCore::OnlineTurnTracker']]],
+  ['canplayturn_12',['CanPlayTurn',['../class_game_core_1_1_online_turn_tracker.html#ac9ac7812a9eb510d20c236add844ccf4',1,'GameCore::OnlineTurnTracker']]],
+  ['changescene_13',['ChangeScene',['../class_scene_change_controller.html#ad83546ab53bbcd0ed5577faac8559f7b',1,'SceneChangeController.ChangeScene(Scenes scene)'],['../class_scene_change_controller.html#ace6c9362696b291dbca0cdfafc6c65b5',1,'SceneChangeController.ChangeScene(int scene)']]],
+  ['cleanregistryfile_14',['CleanRegistryFile',['../class_save_system_1_1_save_manager.html#a4072799a36576f5b397a425d0b7d44f1',1,'SaveSystem::SaveManager']]],
+  ['cliententitykey_15',['ClientEntityKey',['../class_net_system_1_1_player_client.html#a49f48d601527678e17b84c18d947d463',1,'NetSystem::PlayerClient']]],
+  ['closegame_16',['CloseGame',['../class_save_system_1_1_save_manager.html#a9130d4a29a032ea299c326647d95c58f',1,'SaveSystem.SaveManager.CloseGame()'],['../class_save_system_internal_1_1_save_game_manager.html#add10599b235fcb88c40fb4180c7e9612',1,'SaveSystemInternal.SaveGameManager.CloseGame()']]],
+  ['complete_17',['Complete',['../class_net_system_1_1_call_response_1_1_call_status.html#a6adad6c9a0d407e3a12fedb6abf11d85',1,'NetSystem::CallResponse::CallStatus']]],
+  ['completeturn_18',['CompleteTurn',['../class_game_core_1_1_online_turn_tracker.html#a6f3089d94671cb384c1d762c8816b6eb',1,'GameCore::OnlineTurnTracker']]],
+  ['contains_19',['Contains',['../struct_mood_1_1_emotion.html#a82a5096603ea262d8099c0de85fd4848',1,'Mood.Emotion.Contains()'],['../struct_mood_1_1_trait_value.html#a8d55d37d019447721a748217ce3a66e8',1,'Mood.TraitValue.Contains()']]],
+  ['creategame_20',['CreateGame',['../class_net_system_1_1_match_maker.html#a87a951585d02281b4f68894b43178ceb',1,'NetSystem::MatchMaker']]],
+  ['createnewgame_21',['CreateNewGame',['../class_save_system_1_1_save_manager.html#a5dd90831a60d82b760762d61ef20b290',1,'SaveSystem::SaveManager']]],
+  ['createnewsavefile_22',['CreateNewSaveFile',['../class_save_system_internal_1_1_save_game_manager.html#a384a9c67f9039a1adb03ab303fa7e8f4',1,'SaveSystemInternal::SaveGameManager']]],
+  ['createregistryfile_23',['CreateRegistryFile',['../class_save_system_internal_1_1_save_registry_manager.html#a69e7aa5547b8d37516cb7c56313a2ca3',1,'SaveSystemInternal::SaveRegistryManager']]],
+  ['currentlychangingscene_24',['CurrentlyChangingScene',['../class_scene_change_controller.html#a6dbeb2bc8ba8a542d61940a774860cbe',1,'SceneChangeController']]],
+  ['currentlyopengame_25',['CurrentlyOpenGame',['../class_save_system_1_1_save_manager.html#ab1f71f44d585f1c9a1f99e80603c9958',1,'SaveSystem::SaveManager']]]
 ];

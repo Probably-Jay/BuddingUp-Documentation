@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['deletefile_8',['DeleteFile',['../class_save_system_internal_1_1_save_data_serialiser.html#a7ca04631621a7099266349ca1d44cb66',1,'SaveSystemInternal::SaveDataSerialiser']]],
-  ['deletegame_9',['DeleteGame',['../class_save_manager.html#a4fccf988d9d66da6b645cc9ef16a006c',1,'SaveManager.DeleteGame(string gameID)'],['../class_save_manager.html#acd2d7eacf13e9811f3798dcba3038a51',1,'SaveManager.DeleteGame(GameMetaData game)'],['../class_save_system_internal_1_1_save_game_manager.html#a38c32d05842d9ecbd78051f182d572c3',1,'SaveSystemInternal.SaveGameManager.DeleteGame()']]]
+  ['bindevent_8',['BindEvent',['../class_events_manager.html#afefb6df75ca61fdaec8e9b6600bdb56f',1,'EventsManager.BindEvent(EventType eventType, Action action)'],['../class_events_manager.html#ae3d452bbccafd5011d33df91bd6ef0c8',1,'EventsManager.BindEvent(ParameterEventType eventType, Action&lt; EventParams &gt; action)']]]
 ];

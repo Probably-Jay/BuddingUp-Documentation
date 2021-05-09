@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['gameexists_85',['GameExists',['../class_save_system_internal_1_1_save_game_manager.html#a97fadf4da0ebf7a341225911e6ad2bee',1,'SaveSystemInternal.SaveGameManager.GameExists()'],['../class_save_system_internal_1_1_save_data_serialiser.html#ae86659fa4ad2e01c2c5c374307c6afcd',1,'SaveSystemInternal.SaveDataSerialiser.GameExists()']]],
-  ['getallstoredgames_86',['GetAllStoredGames',['../class_save_manager.html#a0402e5104065906809d9774108b76692',1,'SaveManager.GetAllStoredGames()'],['../class_save_system_internal_1_1_save_registry_manager.html#adda7145d08895feb190344049908cb00',1,'SaveSystemInternal.SaveRegistryManager.GetAllStoredGames()']]],
-  ['getgame_87',['GetGame',['../class_save_system_internal_1_1_save_registry_manager.html#a84849ae7ff1f09e307f12147f02d5f39',1,'SaveSystemInternal::SaveRegistryManager']]],
-  ['getserialisablesavegamestruct_88',['GetSerialisableSaveGameStruct',['../class_save_system_internal_1_1_save_data_utility.html#ac756041fc0628f2cf357f241db41d756',1,'SaveSystemInternal::SaveDataUtility']]],
-  ['getusablelivegamestruct_89',['GetUsableLiveGameStruct',['../class_save_system_internal_1_1_save_data_utility.html#a43d6cda5d6101d4998ab5a2e46197ede',1,'SaveSystemInternal::SaveDataUtility']]]
+  ['deepcopyvalues_266',['DeepCopyValues',['../class_mood_attributes.html#a33cb9528ec3db237295cc649166cdbce',1,'MoodAttributes']]],
+  ['deletegame_267',['DeleteGame',['../class_save_system_1_1_save_manager.html#af3b05fac1df5d08ab878c8781fe5e067',1,'SaveSystem.SaveManager.DeleteGame(string gameID)'],['../class_save_system_1_1_save_manager.html#acd964ad062a1383eb12a037f9b49d85a',1,'SaveSystem.SaveManager.DeleteGame(GameMetaData game)'],['../class_save_system_internal_1_1_save_game_manager.html#a38c32d05842d9ecbd78051f182d572c3',1,'SaveSystemInternal.SaveGameManager.DeleteGame()']]],
+  ['deserilaiserawdata_268',['DeserilaiseRawData',['../class_net_system_1_1_network_game.html#a4b5d3e1c26652f775e2c06f7b124cd6d',1,'NetSystem::NetworkGame']]],
+  ['disableduplicateobjects_269',['DisableDuplicateObjects',['../class_singleton.html#abba6c4769452bf5ca4abe764e5c72ce5',1,'Singleton']]]
 ];
